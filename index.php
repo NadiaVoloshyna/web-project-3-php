@@ -1,5 +1,3 @@
-<!-- Document template made in VSCode 
-[accessed 03/05/2023] -->
 <!DOCTYPE html>
 
 <html lang="en">
@@ -16,9 +14,31 @@
             <h2 id="header">Test page</h2>
             <img src="image.jpg" name="image" alt="image" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
         </header>
+
+        <?php
+            require_once 'login.php';
+            try
+            {
+                $pdo = new PDO($attr, $user, $pass, $opts);
+            }
+            catch (PDOException $e)
+            {
+                throw new PDOException($e->getMessage(), (int)$e->getCode());
+            }
+            $query  = "SELECT * FROM name_email";
+            $result = $pdo->query($query);
+            
+            while ($row = $result->fetch())
+            {
+                echo 'First Name:   ' . htmlspecialchars($row['FirstName']) . ' | ';
+                echo 'Second Name:    ' . htmlspecialchars($row['SecondName']) . ' | ';
+                echo 'Email: ' . htmlspecialchars($row['Email']) . "<br>";
+            }
+        ?>
         <?php
             echo " Today is " . date("l") . ". ";
         ?>
+
         <section>
             <p id="p1" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()">
                 <b>Lorem ipsum dolor</b> sit amet, consectetur adipiscing elit. Donec venenatis, 
