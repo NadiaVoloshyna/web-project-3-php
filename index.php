@@ -7,6 +7,11 @@
         <title>test page</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <script type="text/javascript" src="test.js"></script>
+        <script>
+            if ( window.history.replaceState ) {
+                window.history.replaceState( null, null, window.location.href );
+            }
+        </script>
     </head>
 
     <body>
@@ -24,15 +29,6 @@
             catch (PDOException $e)
             {
                 throw new PDOException($e->getMessage(), (int)$e->getCode());
-            }
-            $query  = "SELECT * FROM name_email";
-            $result = $pdo->query($query);
-            
-            while ($row = $result->fetch())
-            {
-                echo 'First Name:   ' . htmlspecialchars($row['FirstName']) . ' | ';
-                echo 'Second Name:    ' . htmlspecialchars($row['SecondName']) . ' | ';
-                echo 'Email: ' . htmlspecialchars($row['Email']) . "<br>";
             }
         ?>
         <?php
@@ -84,10 +80,60 @@
             </dl>
         </section>
 
-        <form method="post" id="feedback">
-            Username: <input type="text" id="name" placeholder="Enter your name"> </form><br>
-            <button type="submit" id="submit" onclick="handleFormSubmit()">Click</button>
-        </form>
+        <?php
+            if (isset($_POST['delete']) && isset($_POST['email']))
+            {
+              $isbn   = get_post($pdo, 'email');
+              $query  = "DELETE FROM users_data WHERE Email=$isbn";
+              $result = $pdo->query($query);
+            }
+
+            if (isset($_POST['firstname']) && isset($_POST['secondname']) && isset($_POST['email']))
+            {
+                $firstname = get_post($pdo, 'firstname');
+                $secondname = get_post($pdo, 'secondname');
+                $email = get_post($pdo, 'email');
+                
+                $query = "INSERT INTO users_data (FirstName, SecondName, Email) VALUES ($firstname, $secondname, $email)";
+                $result = $pdo->query($query);
+            }
+            function get_post($pdo, $var)
+            {
+                return $pdo->quote($_POST[$var]);
+            }
+        ?>
+
+        <form action="index.php" method="post" id="feedback"><pre>
+            First Name  <input type="text" id="name" name="firstname" placeholder="Enter your first name"><br/>
+            Second Name <input type="text" id="name" name="secondname" placeholder="Enter your second name"><br/>
+            Email       <input type="email" id="name" name="email" placeholder="Enter your email"><br/>
+            <button type="submit" id="submit">Click</button>
+        </pre></form>
+        
+        <?php
+            $query  = "SELECT * FROM users_data";
+            $result = $pdo->query($query);
+            
+            while ($row = $result->fetch())
+            {
+                $r0 = htmlspecialchars($row['FirstName']);
+                $r1 = htmlspecialchars($row['SecondName']);
+                $r2 = htmlspecialchars($row['Email']);
+                
+                echo <<<_END
+            <pre>
+                First Name:  $r0
+                Second Name: $r1
+                Email:       $r2
+            </pre>
+            <form action='index.php' method='post'>
+                <input type='hidden' name='delete' value='yes'>
+                <input type='hidden' name='email' value='$r2'>
+                <input type='submit' id="submit" value='delete'>
+            </form>
+            _END;
+            }
+        ?>
 
         <footer id="footer">
             <a href="https://www.linkedin.com/in/nadiia-voloshyna/" target="_blank">Click here to visit Nadiia Voloshyna Website.</a>
