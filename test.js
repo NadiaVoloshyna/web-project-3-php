@@ -11,11 +11,11 @@ let handleMouseOut = () => {
     header.style.opacity = "1"
 }
 
-let handleFormSubmit = () => {
-    let ref = document.referrer
-    let modified = document.lastModified
-    alert(`last modified: ${modified}   by: ${ref}`)
-}
+// let handleFormSubmit = () => {
+//     let ref = document.referrer
+//     let modified = document.lastModified
+//     alert(`last modified: ${modified}   by: ${ref}`)
+// }
 
 let onMouseOver = () => {
     document.image.src = "image_extended.jpg"
@@ -24,3 +24,4 @@ let onMouseOver = () => {
 let onMouseOut = () => {
     document.image.src = "image.jpg"
 }
+

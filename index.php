@@ -15,10 +15,15 @@
     </head>
 
     <body>
-        <header>
-            <h2 id="header">Test page</h2>
+        <header id="header">
             <img src="image.jpg" name="image" alt="image" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
-        </header>
+            <h2>Nadiia Voloshyna</h2>
+            <div id="quote">
+               <?php
+                echo " Today is " . date("l") . " ... Hold the vision, trust the process ";
+                ?> 
+            </div>
+        </header> 
 
         <?php
             require_once 'login.php';
@@ -31,11 +36,8 @@
                 throw new PDOException($e->getMessage(), (int)$e->getCode());
             }
         ?>
-        <?php
-            echo " Today is " . date("l") . ". ";
-        ?>
-
-        <section>
+       
+        <section id="s1">
             <p id="p1" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()">
                 <b>Lorem ipsum dolor</b> sit amet, consectetur adipiscing elit. Donec venenatis, 
                 risus a molestie tempus, sem augue rhoncus ligula, sed pharetra tortor mauris in orci. 
@@ -103,10 +105,10 @@
             }
         ?>
 
-        <form action="index.php" method="post" id="feedback"><pre>
-            First Name  <input type="text" id="name" name="firstname" placeholder="Enter your first name"><br/>
-            Second Name <input type="text" id="name" name="secondname" placeholder="Enter your second name"><br/>
-            Email       <input type="email" id="name" name="email" placeholder="Enter your email"><br/>
+        <form action="index.php" method="post" name="form" id="feedback"><pre>
+            First Name  <input type="text" id="name" name="firstname" placeholder="Enter your first name" required><br/>
+            Second Name <input type="text" id="name" name="secondname" placeholder="Enter your second name" required><br/>
+            Email       <input type="email" id="name" name="email" placeholder="Enter your email" required><br/>
             <button type="submit" id="submit">Click</button>
         </pre></form>
         
