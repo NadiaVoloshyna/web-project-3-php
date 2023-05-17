@@ -6,14 +6,14 @@
 
 let onImageOver = () => {
     let quote= document.getElementById("quote");
-    let image = document.getElementById("image");
-    quote.style.opacity = "1"
-    image.style.cursor = "pointer"
-    document.image.src = "icon-globe.png"
+    let logo = document.getElementById("logo");
+    quote.style.opacity = "0.1"
+    logo.style.cursor = "pointer"
+    document.logo.src = "images/icon-earth.gif"
 }
 
-let onImageClick = () => {
+let onImageOut = () => {
     let quote= document.getElementById("quote");
-    document.image.src = "icon-earth.gif"
-    quote.style.opacity = "0.1"
+    document.logo.src = "images/icon-globe.png"
+    quote.style.opacity = "1"
 }
