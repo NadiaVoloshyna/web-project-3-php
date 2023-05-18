@@ -18,7 +18,9 @@
     $query  = "SELECT * FROM users_data";
     $result = $pdo->query($query);
     
-    echo "<h4>MY CONNECTIONS</h4>";
+    echo <<<_TITLE
+        <h4 id="title">MY CONNECTIONS</h4>
+    _TITLE;
 
     while ($row = $result->fetch()) {
         $r0 = htmlspecialchars($row['FirstName']);
