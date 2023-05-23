@@ -1,18 +1,45 @@
 ## request
-Write a website using HTML5 that is a profile of yourself. Think of it as the profile you would put on a social media site.
+Write a website using HTML, CSS, JavaScript, PHP and put it onto the remote webserver.
+The goal is to practice the basic website development. View the site on the phone to check the responsiveness.
 
-This should include sections about: 
+The website is a profile of yourself. It should include sections about: 
 • Your name as a header 
 • A statement about your aspirations within Abertay 
 • A statement about your favourite hobby 
-• Abertay address and contact details 
 • Your programme at Abertay
+• Abertay address and contact details 
 
-Put the website onto the webserver.
+## analysis
+The inputs to the project are the following:
+- Created web content
+- Optimized images
+- Provided server space on the Abertay student web server to host a website
+- Registered profile on the LinkedIn social network
 
-View the site on your phone.
+The website takes the user to the Home page with information about the website owner. There is a navigation menu with 
+internal links and a footer with an external link to the social network profile. The user can navigate from the Home page to the 
+Connect page that contains the registration form. Another internal link goes to the Friends page with all saved 
+to the database connections listed. There is a deletion option to remove the connection from the persistent storage.
 
-Add some colour or style.
+The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/website. The user interface 
+is supposed to be minimalist with three-four basic colors.
 
+## design
+The web application architecture:
+Client: HTML, CSS, JavaScript
 
+There are three pages on the website. The sitemap is:
+Home page                                      Connect page          Frinds page
+Owner's Name                                   Registration form     Friends list
+Statement about aspirations within Abertay
+Statement about favourite hobbies
+The programme at Abertay
+Abertay address and contact details
+
+The Home page contains information about the owner and a link to the social network profile. It has Javascript mouse events.
+The Connect page collects data from user, validates, and sends it to the server.
+The Friends page presents the list of connections with a delete button.
+
+Server: Apache HTTP server, PHP, MySQL
+Responds to the requests and sends an HTML document to the browser. Processes the user's data and stores it in the database.
 

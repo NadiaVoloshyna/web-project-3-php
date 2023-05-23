@@ -14,6 +14,10 @@
         $query  = "DELETE FROM users_data WHERE Email=$isbn";
         $result = $pdo->query($query);
     }
+
+    function get_post($pdo, $var) {
+        return $pdo->quote($_POST[$var]);
+    }
     
     $query  = "SELECT * FROM users_data";
     $result = $pdo->query($query);

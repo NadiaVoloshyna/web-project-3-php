@@ -1,9 +1,3 @@
-// let handleFormSubmit = () => {
-//     let ref = document.referrer
-//     let modified = document.lastModified
-//     alert(`last modified: ${modified}   by: ${ref}`)
-// }
-
 let onImageOver = () => {
     let quote= document.getElementById("quote");
     let logo = document.getElementById("logo");
