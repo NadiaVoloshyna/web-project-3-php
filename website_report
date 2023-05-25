@@ -9,6 +9,16 @@ The website is a profile of yourself. It should include sections about:
 • Your programme at Abertay
 • Abertay address and contact details 
 
+Write a website using HTML, CSS, JavaScript, PHP and put it onto the remote webserver.
+The goal is to practice the basic website development. View the site on the phone to check the responsiveness.
+
+The website is a profile of yourself. It should include sections about: 
+• Your name as a header 
+• A statement about your aspirations within Abertay 
+• A statement about your favourite hobby 
+• Your programme at Abertay
+• Abertay address and contact details 
+
 ## analysis
 The inputs to the project are the following:
 - Created web content
