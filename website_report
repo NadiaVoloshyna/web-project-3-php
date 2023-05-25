@@ -1,54 +1,78 @@
+##### P3 #####
+Develop a Cyber Security News webpage. It should include three articles: Malware(100 words), Ransomware(100 words), 
+approaches to Password Cracking(200 words). The article content can be used from any source (provide a URL as a reference in the article). 
+Readers should be able to comment on the news article. Readers can also read comments from other users. 
+
+The web application should be dynamic with the following technical requirements: 
+• Clear use of HTML5 tags including text, images, and links. 
+• Use of a CSS framework, such as Bootstrap, to provide a responsive layout 
+• Use of a custom CSS to demonstrate any element 
+• Use of CSS transition or CSS Animation or Canvas Animation 
+• Use of PHP server-side script(s) to enable: 
+  - reading a table in a database – view old comments 
+  - writing to a table in a database – post new comments
+
+The web application should have a professional look with the following characteristics: 
+• Attractive layout, colour, and use of images 
+• Good contrast between the background and text 
+• Clear functionality from the user’s perspective 
+• Purposeful interactive elements which enhance the appearance and functionality of the application
+
+The web application should not have large areas of empty space or oversized graphics. 
+The web application should not have pointless use of interactivity e.g., mouseover logo to show 
+a larger logo. Pointless or trivial features will not receive full credit.
+
 ## request
-Write a website using HTML, CSS, JavaScript, PHP and put it onto the remote webserver.
-The goal is to practice the basic website development. View the site on the phone to check the responsiveness.
+Write a website ‘TechNews’ using HTML, CSS, JavaScript, PHP and MySQL and put it onto the remote webserver.
+The goal is to practice advanced HTML (with attention to semantics) and CSS techniques (control the appearance of the content). 
+Apply CSS image gallery to work with images. Use a CSS framework Bootstrap to provide a responsive layout.
+The content may be taken from any news website (include the reference in the report).
 
-The website is a profile of yourself. It should include sections about: 
-• Your name as a header 
-• A statement about your aspirations within Abertay 
-• A statement about your favourite hobby 
-• Your programme at Abertay
-• Abertay address and contact details 
-
-Write a website using HTML, CSS, JavaScript, PHP and put it onto the remote webserver.
-The goal is to practice the basic website development. View the site on the phone to check the responsiveness.
-
-The website is a profile of yourself. It should include sections about: 
-• Your name as a header 
-• A statement about your aspirations within Abertay 
-• A statement about your favourite hobby 
-• Your programme at Abertay
-• Abertay address and contact details 
-
+The webpage should have the following tags: 
+• Head and body 
+• Hyperlink 
+• Images 
+• Lists 
+• Blocks Html5 
+• Article 
+• Figure 
+• Footer 
+• Nav 
+ 
 ## analysis
 The inputs to the project are the following:
-- Created web content
+- Content from tech news websites
+  IBM unveiled a major long-term partnership at the G7 summit
+  https://www.linkedin.com/feed/update/urn:li:activity:7066421076947333121/
+  IBM has officially entered the generative AI arena
+  https://www.linkedin.com/news/story/ibm-joins-ai-fray-with-watsonx-6280770/
+  IBM's CEO says nearly 8,000 jobs at the company could be replaced by AI
+  https://www.linkedin.com/news/story/ibm-ponders-ai-impact-before-hiring-6275930/
 - Optimized images
 - Provided server space on the Abertay student web server to host a website
-- Registered profile on the LinkedIn social network
 
-The website takes the user to the Home page with information about the website owner. There is a navigation menu with 
-internal links and a footer with an external link to the social network profile. The user can navigate from the Home page to the 
-Connect page that contains the registration form. Another internal link goes to the Friends page with all saved 
-to the database connections listed. There is a deletion option to remove the connection from the persistent storage.
+The website takes the user to the Home page with image galary where images are used as links to the three technical articles. There are 
+short descriptions to the images to provide the user with summary of the articles. Each image-link goes to the separate page with article content, 
+form for adding comments and view all functionality to look through the previous comments. The deletion option allows to remove the comment from the list. 
+There is a navigation menu with an internal link and a footer with an external link to the social network profile.
 
-The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/website. The user interface 
-is supposed to be minimalist with three-four basic colours.
+The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/tech_news. 
+<!-- The user interface is supposed to be minimalist with three-four basic colours. -->
 
 ## design
 The web application architecture:
 Client: HTML, CSS, JavaScript
 
-There are three pages on the website. The sitemap is:
-Home page                                      Connect page          Frinds page
-Owner's Name                                   Registration form     Friends list
-Statement about aspirations within Abertay
-Statement about favourite hobbies
-The programme at Abertay
-Abertay address and contact details
+There are three pages on the website. The sitemap is: 
+Home page             First page                 Second page                Third page
+ 
+Website Title         Article                    Article                    Article 
+Statement about       Form for the comment       Form for the comment       Form for the comment
+Image galary          Previous comments list     Previous comments list     Previous comments list
 
-The Home page contains information about the owner and a link to the social network profile. It has Javascript mouse events.
+<!-- The Home page contains information about the owner and a link to the social network profile. It has Javascript mouse events.
 The Connect page collects data from user, validates, and sends it to the server.
-The Friends page presents the list of connections with a delete button.
+The Friends page presents the list of connections with a delete button. -->
 
 Server: Apache HTTP server, PHP, MySQL
 Responds to the requests and sends an HTML document to the browser. Processes the user's data and stores it in the database.
