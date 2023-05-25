@@ -22,7 +22,7 @@ Connect page that contains the registration form. Another internal link goes to 
 to the database connections listed. There is a deletion option to remove the connection from the persistent storage.
 
 The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/website. The user interface 
-is supposed to be minimalist with three-four basic colors.
+is supposed to be minimalist with three-four basic colours.
 
 ## design
 The web application architecture:
