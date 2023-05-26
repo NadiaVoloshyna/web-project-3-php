@@ -52,8 +52,9 @@ The inputs to the project are the following:
 - Provided server space on the Abertay student web server to host a website
 
 The website takes the user to the Home page with image galary where images are used as links to the three technical articles. There are 
-short descriptions to the images to provide the user with summary of the articles. Each image-link goes to the separate page with article content, 
-form for adding comments and view all functionality to look through the previous comments. The deletion option allows to remove the comment from the list. 
+short descriptions to the images to provide the user with summary of the articles and a 'read more' button that acts as a link as well. 
+Each link goes to the separate page with article content, form for adding comments and view all functionality to look through 
+the previous comments. The deletion option allows to remove the comment from the list. 
 There is a navigation menu with an internal link and a footer with an external link to the social network profile.
 
 The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/tech_news. 
@@ -64,11 +65,11 @@ The web application architecture:
 Client: HTML, CSS, JavaScript
 
 There are three pages on the website. The sitemap is: 
-Home page             First page                 Second page                Third page
+Home page                       First page                 Second page                Third page
  
-Website Title         Article                    Article                    Article 
-Statement about       Form for the comment       Form for the comment       Form for the comment
-Image galary          Previous comments list     Previous comments list     Previous comments list
+Website Title                   Article                    Article                    Article 
+Statement about the news site   Form for the comment       Form for the comment       Form for the comment
+Image galary                    Previous comments list     Previous comments list     Previous comments list
 
 <!-- The Home page contains information about the owner and a link to the social network profile. It has Javascript mouse events.
 The Connect page collects data from user, validates, and sends it to the server.

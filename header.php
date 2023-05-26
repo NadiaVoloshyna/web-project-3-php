@@ -7,7 +7,7 @@
                 <meta name='viewport' content='width=device-width, initial-scale=1'> 
                 <link rel="stylesheet" type="text/css" href="style.css" />
                 <script type="text/javascript" src="test.js"></script>
-                <title>Home Page</title>
+                <title>Tech News</title>
                 <script>
                     if ( window.history.replaceState ) {
                         window.history.replaceState( null, null, window.location.href );
@@ -17,8 +17,8 @@
 
             <body>
                 <header id="header">
-                    <img src="images/icon-globe.png" id="logo" name="logo" alt="logo" onmouseover="onImageOver()" onmouseout="onImageOut()">
-                    <h2>Nadiia Voloshyna</h2>
+                    <img src="images/icon-globe.png" id="logo" name="logo" alt="logo">
+                    <h2>Tech News</h2>
     _INIT;
 
     $day = date("l");
@@ -28,8 +28,6 @@
     echo <<<_END
                     <div id="nav">
                         <a href="index.php" class="button">Home</a>
-                        <a href="connect.php" class="button">Connect</a>
-                        <a href="friends.php" class="button">Friends</a>
                     </div>
                     <div id='quote'>It is $day , $time</div>
                     <div id="images">
