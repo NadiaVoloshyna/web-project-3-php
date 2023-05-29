@@ -17,7 +17,7 @@
 
             <body>
                 <header id="header">
-                    <img src="images/icon-globe.png" id="logo" name="logo" alt="logo">
+                    <img src="images/icon-globe.png" id="logo" alt="logo">
                     <h2>Tech News</h2>
     _INIT;
 
@@ -25,16 +25,16 @@
     date_default_timezone_set("Europe/London");
     $time = date("h:i:sa");
 
-    echo <<<_END
-                    <div id="nav">
+    echo <<<_HEADER
+                    <nav id="nav">
                         <a href="index.php" class="button">Home</a>
-                    </div>
-                    <div id='quote'>It is $day , $time</div>
+                    </nav>
+                    <div id="quote">It is $day , $time</div>
                     <div id="images">
                         <img src="images/learning.png" name="learning" alt="learning">
                         <img src="images/nature.png" name="nature" alt="nature">
                         <img src="images/home.png" name="home" alt="home">
                     </div>
                 </header> 
-    _END;
+    _HEADER;
 ?>

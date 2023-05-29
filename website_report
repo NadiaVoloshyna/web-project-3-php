@@ -23,9 +23,11 @@ The web application should not have pointless use of interactivity e.g., mouseov
 a larger logo. Pointless or trivial features will not receive full credit.
 
 ## request
-Write a website ‘TechNews’ using HTML, CSS, JavaScript, PHP and MySQL and put it onto the remote webserver.
+Write a website ‘TechNews’ using HTML, CSS, JavaScript???, PHP and MySQL and put it onto the remote webserver.
 The goal is to practice advanced HTML (with attention to semantics) and CSS techniques (control the appearance of the content). 
-Apply CSS image gallery to work with images. Use a CSS framework Bootstrap to provide a responsive layout.
+Apply CSS image gallery to work with images. Practice PHP server-side scripts to enable: 
+  - reading a table in a database – view old comments 
+  - writing to a table in a database – post new comments
 The content may be taken from any news website (include the reference in the report).
 
 The webpage should have the following tags: 
@@ -50,30 +52,31 @@ The inputs to the project are the following:
   https://www.linkedin.com/news/story/ibm-ponders-ai-impact-before-hiring-6275930/
 - Optimized images
 - Provided server space on the Abertay student web server to host a website
+- Registered profile on the LinkedIn social network
 
-The website takes the user to the Home page with image galary where images are used as links to the three technical articles. There are 
-short descriptions to the images to provide the user with summary of the articles and a 'read more' button that acts as a link as well. 
-Each link goes to the separate page with article content, form for adding comments and view all functionality to look through 
-the previous comments. The deletion option allows to remove the comment from the list. 
-There is a navigation menu with an internal link and a footer with an external link to the social network profile.
+The website takes the user to the Home page with an image galary where images and their descriptions are used as links to three technical articles. 
+Each link goes to the separate page with the article content, a form for adding comments and a list of previous comments. 
+The user can provide their name and leave a comment to the chosen article. The from uses a built-in form validation.
+There is a navigation menu with an internal link to the home page and a footer with an external link to the social network profile.
 
 The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/tech_news. 
-<!-- The user interface is supposed to be minimalist with three-four basic colours. -->
+The user interface is supposed to be minimalist with three-four basic colours.
 
 ## design
 The web application architecture:
-Client: HTML, CSS, JavaScript
+Client: HTML, CSS, JavaScript???
 
 There are three pages on the website. The sitemap is: 
 Home page                       First page                 Second page                Third page
  
 Website Title                   Article                    Article                    Article 
 Statement about the news site   Form for the comment       Form for the comment       Form for the comment
-Image galary                    Previous comments list     Previous comments list     Previous comments list
+Image galary with links         Previous comments list     Previous comments list     Previous comments list
 
-<!-- The Home page contains information about the owner and a link to the social network profile. It has Javascript mouse events.
-The Connect page collects data from user, validates, and sends it to the server.
-The Friends page presents the list of connections with a delete button. -->
+The Home page contains information about the website and links to the articles. The links are organized with <div> blocks. Each block contains an image and a description.
+The image acts as a link. To make the whole <div> block clickable the following technique is used: inside the link an empty <span> tag is set, the block is given position:relative, 
+the span is given position:absolute, width:100% and height:100%. 
+Each article page displays the content, collects data from user, validates, and sends it to the server to store in the database. The previous commnets are listed below the form.
 
 Server: Apache HTTP server, PHP, MySQL
 Responds to the requests and sends an HTML document to the browser. Processes the user's data and stores it in the database.

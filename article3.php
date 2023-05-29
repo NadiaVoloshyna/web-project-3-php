@@ -13,8 +13,8 @@
     $action = "article3.php";
 
     echo <<<_ARTICLE
-        <section id="article">
-            <div>
+        <section class="section">
+            <article class="article">
                 <p>
                     <b>Tech News</b> is an independent online news journal launched in 2022 to cover key technical stories. Today we have readers from around the world.
                     We bring you the future as it happens. <b>Tech News</b> is the ultimate resource for the latest tech news, views, information, data and events.
@@ -28,7 +28,7 @@
                     As part of our mission, we're increasing the amount of industry expert-led content we produce. From tax to law and marketing to HR, <b>Tech News</b> is a trusted 
                     partner to educate, inform and inspire the next generation of tech titans.
                 </p>
-            </div>
+            </article>
     _ARTICLE;
 
     require_once 'comments.php';

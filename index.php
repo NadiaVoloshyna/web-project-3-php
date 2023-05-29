@@ -5,8 +5,8 @@
         error_reporting(E_ALL); 
                 
     echo <<<_MAIN
-        <section id="section">
-            <div>
+        <section class="section">
+            <summary>
                 <p>
                     <b>Tech News</b> is an independent online news journal launched in 2022 to cover key technical stories. Today we have readers from around the world.
                     We bring you the future as it happens. <b>Tech News</b> is the ultimate resource for the latest tech news, views, information, data and events.
@@ -20,12 +20,12 @@
                     As part of our mission, we're increasing the amount of industry expert-led content we produce. From tax to law and marketing to HR, <b>Tech News</b> is a trusted 
                     partner to educate, inform and inspire the next generation of tech titans.
                 </p>
-            </div>
+            </summary>
 
             <div class="gallery">
                 <a target="_blank" href="article1.php">
                     <span id="span"></span>
-                    <img src="images/G7.png" name="G7" alt="G7">
+                    <img src="images/G7.png" alt="G7">
                 </a>
                 <div class="desc">
                     <h3>IBM unveiled a major long-term partnership at the G7 summit</h3>
@@ -40,7 +40,7 @@
             <div class="gallery">
                 <a target="_blank" href="article2.php">
                     <span id="span"></span>
-                    <img src="images/watsonx.png" name="watsonx" alt="watsonx">
+                    <img src="images/watsonx.png" alt="watsonx">
                 </a>
                 <div class="desc">
                     <h3>IBM has officially entered the generative AI arena</h3>
@@ -55,7 +55,7 @@
             <div class="gallery">
                 <a target="_blank" href="article3.php">
                     <span id="span"></span>
-                    <img src="images/AI.png" name="AI" alt="AI">
+                    <img src="images/AI.png" alt="AI">
                 </a>
                 <div class="desc">
                     <h3>IBM's CEO says nearly 8,000 jobs at the company could be replaced by AI</h3>
