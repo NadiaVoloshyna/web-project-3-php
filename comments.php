@@ -35,7 +35,7 @@
                     
         echo <<<_COMMENTS
             <div id="block">
-                <img src="images/chat.png" alt="earth">
+                <img src="images/chat.png" alt="chat">
                 <div id="commenter">
                     <p><b>$r0</b></p>
                     <div>$r1</div>

@@ -6,7 +6,6 @@
                 <meta charset='utf-8'>
                 <meta name='viewport' content='width=device-width, initial-scale=1'> 
                 <link rel="stylesheet" type="text/css" href="style.css" />
-                <script type="text/javascript" src="test.js"></script>
                 <title>Tech News</title>
                 <script>
                     if ( window.history.replaceState ) {
@@ -31,9 +30,9 @@
                     </nav>
                     <div id="quote">It is $day , $time</div>
                     <div id="images">
-                        <img src="images/learning.png" name="learning" alt="learning">
-                        <img src="images/nature.png" name="nature" alt="nature">
-                        <img src="images/home.png" name="home" alt="home">
+                        <img src="images/learning.png" alt="learning">
+                        <img src="images/nature.png" alt="nature">
+                        <img src="images/home.png" alt="home">
                     </div>
                 </header> 
     _HEADER;

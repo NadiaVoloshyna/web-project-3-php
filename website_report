@@ -23,9 +23,10 @@ The web application should not have pointless use of interactivity e.g., mouseov
 a larger logo. Pointless or trivial features will not receive full credit.
 
 ## request
-Write a website ‘TechNews’ using HTML, CSS, JavaScript???, PHP and MySQL and put it onto the remote webserver.
-The goal is to practice advanced HTML (with attention to semantics) and CSS techniques (control the appearance of the content). 
-Apply CSS image gallery to work with images. Practice PHP server-side scripts to enable: 
+Write a website ‘TechNews’ using HTML, CSS, PHP and MySQL and put it onto the remote webserver.
+The goal is to practice more advanced HTML (with attention to semantics) and CSS techniques (control the appearance of the content). 
+Apply CSS image gallery to work with images. 
+Practice PHP server-side scripts to enable: 
   - reading a table in a database – view old comments 
   - writing to a table in a database – post new comments
 The content may be taken from any news website (include the reference in the report).
@@ -56,7 +57,7 @@ The inputs to the project are the following:
 
 The website takes the user to the Home page with an image galary where images and their descriptions are used as links to three technical articles. 
 Each link goes to the separate page with the article content, a form for adding comments and a list of previous comments. 
-The user can provide their name and leave a comment to the chosen article. The from uses a built-in form validation.
+The user can provide their name and leave a comment to the chosen article. The form uses a built-in form validation.
 There is a navigation menu with an internal link to the home page and a footer with an external link to the social network profile.
 
 The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/tech_news. 
@@ -64,7 +65,7 @@ The user interface is supposed to be minimalist with three-four basic colours.
 
 ## design
 The web application architecture:
-Client: HTML, CSS, JavaScript???
+Client: HTML, CSS
 
 There are three pages on the website. The sitemap is: 
 Home page                       First page                 Second page                Third page

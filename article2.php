@@ -24,7 +24,7 @@
                 </p>
                 <hr>
                 <h4>IBM Unveils the Watsonx Platform to Power Next-Generation Foundation Models for Business</h4>
-                <div id="products">
+                <div class="float">
                     <pre id="left">
         &#9864 Watsonx is a new platform to be released for foundation models and generative AI, offering a studio, data 
           store, and governance toolkit

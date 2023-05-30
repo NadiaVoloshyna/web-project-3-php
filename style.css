@@ -144,7 +144,7 @@ hr {
     margin: 0 40px 30px;
 }
 
-#products {
+.float {
     display: flex;
     align-items: center;
 }
@@ -155,15 +155,26 @@ hr {
     margin-right: 30px;
 }
 .right {
-    float: right;
     width: 220px;
     margin-right: 10px;
+}
+
+#lefty {
+    margin-right: 30px;
 }
 
 #iframe {
     margin-top: 20px;
     width: 560px;
     height: 315px;
+}
+
+#figure {
+    margin-top: 30px;
+}
+
+#figcaption {
+    font-weight: bold;
 }
 
 /* comments styles */

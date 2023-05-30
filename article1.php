@@ -54,7 +54,7 @@
                 <p>
                     We'll be sponsoring research at the University of Chicago and the University of Tokyo to advance each of these four areas.
                 </p>
-                <img src="images/article1.jpg" alt="supercomputer">
+                <img src="images/supercomputer.jpg" alt="supercomputer">
                 <p>
                     The University of Tokyo will lead efforts to identify, scale, and run end-to-end demonstrations of quantum algorithms. They will also begin to develop and 
                     build the supply chain around new components required for such a large system including cryogenics, control electronics, and more. The University of Tokyo, 
