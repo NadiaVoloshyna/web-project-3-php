@@ -22,48 +22,50 @@
                 </p>
             </summary>
 
-            <div class="gallery">
-                <a target="_blank" href="article1.php">
-                    <span id="span"></span>
-                    <img src="images/G7.png" alt="G7">
-                </a>
-                <div class="desc">
-                    <h3>IBM unveiled a major long-term partnership at the G7 summit</h3>
-                    Quantum technology is rapidly advancing, bringing us closer to solving previously unsolvable problems. And at IBM, 
-                    we're laser-focused on bringing useful quantum computing to the world. </br>
-                    Yesterday, at the G7 Summit, we took a big step forward towards this new era with the announcement of our 10-year, 
-                    $100 million partnership with the University of Tokyo and University of Chicago to develop a 100,000-qubit quantum system by the year 2033.
-                    <span id="more">...read more</span>
+            <div id="gallery">
+                <div class="gallery">
+                    <a target="_blank" href="article1.php">
+                        <span id="span"></span>
+                        <img src="images/G7.png" alt="G7">
+                    </a>
+                    <div class="desc">
+                        <h3>IBM unveiled a major long-term partnership at the G7 summit</h3>
+                        Quantum technology is rapidly advancing, bringing us closer to solving previously unsolvable problems. And at IBM, 
+                        we're laser-focused on bringing useful quantum computing to the world. </br>
+                        Yesterday, at the G7 Summit, we took a big step forward towards this new era with the announcement of our 10-year, 
+                        $100 million partnership with the University of Tokyo and University of Chicago to develop a 100,000-qubit quantum system by the year 2033.
+                        <span id="more">...read more</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="gallery">
-                <a target="_blank" href="article2.php">
-                    <span id="span"></span>
-                    <img src="images/watsonx.png" alt="watsonx">
-                </a>
-                <div class="desc">
-                    <h3>IBM has officially entered the generative AI arena</h3>
-                    More than a decade after debuting Watson — a literal question-answering machine designed to beat humans at “Jeopardy” — 
-                    IBM is renewing its push into artificial intelligence. The company has brought back the brand in the form of Watsonx, 
-                    a platform that aims to help companies create and integrate custom AI capabilities into their operations. CEO Arvind Krishna says 
-                    the new data and AI platform could replace between 30% and 50% of “repetitive, back-office processes” in coming years and has repeatedly 
-                    emphasized its accuracy compared with rival AI products. <span id="more">...read more</span>
+                <div class="gallery">
+                    <a target="_blank" href="article2.php">
+                        <span id="span"></span>
+                        <img src="images/watsonx.png" alt="watsonx">
+                    </a>
+                    <div class="desc">
+                        <h3>IBM has officially entered the generative AI arena</h3>
+                        More than a decade after debuting Watson — a literal question-answering machine designed to beat humans at “Jeopardy” — 
+                        IBM is renewing its push into artificial intelligence. The company has brought back the brand in the form of Watsonx, 
+                        a platform that aims to help companies create and integrate custom AI capabilities into their operations. CEO Arvind Krishna says 
+                        the new data and AI platform could replace between 30% and 50% of “repetitive, back-office processes” in coming years and has repeatedly 
+                        emphasized its accuracy compared with rival AI products. <span id="more">...read more</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="gallery">
-                <a target="_blank" href="article3.php">
-                    <span id="span"></span>
-                    <img src="images/AI.png" alt="AI">
-                </a>
-                <div class="desc">
-                    <h3>IBM's CEO says nearly 8,000 jobs at the company could be replaced by AI</h3>
-                    IBM will wait and see which jobs can be replaced by artificial intelligence before hiring for more back-office roles. 
-                    Roughly 7,800 jobs in departments such as human resources could be done with AI and automation, CEO Arvind Krishna says. 
-                    The century-old company, which has about 260,000 employees, continues to hire for customer-facing roles and software development. 
-                    Still, Krishna's announcement is one of the most sweeping by a major corporation on the impact of the new technology on its workforce, Bloomberg notes.
-                    <span id="more">...read more</span>
+                <div class="gallery">
+                    <a target="_blank" href="article3.php">
+                        <span id="span"></span>
+                        <img src="images/AI.png" alt="AI">
+                    </a>
+                    <div class="desc">
+                        <h3>IBM's CEO says nearly 8,000 jobs at the company could be replaced by AI</h3>
+                        IBM will wait and see which jobs can be replaced by artificial intelligence before hiring for more back-office roles. 
+                        Roughly 7,800 jobs in departments such as human resources could be done with AI and automation, CEO Arvind Krishna says. 
+                        The century-old company, which has about 260,000 employees, continues to hire for customer-facing roles and software development. 
+                        Still, Krishna's announcement is one of the most sweeping by a major corporation on the impact of the new technology on its workforce, Bloomberg notes.
+                        <span id="more">...read more</span>
+                    </div>
                 </div>
             </div>
         </section> 

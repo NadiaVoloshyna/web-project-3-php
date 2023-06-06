@@ -1,10 +1,11 @@
-##### P3 #####
-Develop a Cyber Security News webpage. It should include three articles: Malware(100 words), Ransomware(100 words), 
-approaches to Password Cracking(200 words). The article content can be used from any source (provide a URL as a reference in the article). 
+## request
+Develop a Cyber Security News webpage using HTML, CSS, Bootstrap, JavaScript???, PHP and MySQL and put it onto the remote webserver. 
+It should include three articles: Malware(100 words), Ransomware(100 words), approaches to Password Cracking(200 words). 
+The article content can be used from any source (provide a URL as a reference in the article). 
 Readers should be able to comment on the news article. Readers can also read comments from other users. 
 
 The web application should be dynamic with the following technical requirements: 
-• Clear use of HTML5 tags including text, images, and links. 
+• Clear use of HTML5 tags including text, images, and links
 • Use of a CSS framework, such as Bootstrap, to provide a responsive layout 
 • Use of a custom CSS to demonstrate any element 
 • Use of CSS transition or CSS Animation or Canvas Animation 
@@ -17,65 +18,46 @@ The web application should have a professional look with the following character
 • Good contrast between the background and text 
 • Clear functionality from the user’s perspective 
 • Purposeful interactive elements which enhance the appearance and functionality of the application
-
-The web application should not have large areas of empty space or oversized graphics. 
-The web application should not have pointless use of interactivity e.g., mouseover logo to show 
-a larger logo. Pointless or trivial features will not receive full credit.
-
-## request
-Write a website ‘TechNews’ using HTML, CSS, PHP and MySQL and put it onto the remote webserver.
-The goal is to practice more advanced HTML (with attention to semantics) and CSS techniques (control the appearance of the content). 
-Apply CSS image gallery to work with images. 
-Practice PHP server-side scripts to enable: 
-  - reading a table in a database – view old comments 
-  - writing to a table in a database – post new comments
-The content may be taken from any news website (include the reference in the report).
-
-The webpage should have the following tags: 
-• Head and body 
-• Hyperlink 
-• Images 
-• Lists 
-• Blocks Html5 
-• Article 
-• Figure 
-• Footer 
-• Nav 
+  The web application should not have large areas of empty space or oversized graphics. 
+  The web application should not have pointless use of interactivity e.g., mouseover logo to show a larger logo. 
  
 ## analysis
 The inputs to the project are the following:
-- Content from tech news websites
-  IBM unveiled a major long-term partnership at the G7 summit
-  https://www.linkedin.com/feed/update/urn:li:activity:7066421076947333121/
-  IBM has officially entered the generative AI arena
-  https://www.linkedin.com/news/story/ibm-joins-ai-fray-with-watsonx-6280770/
-  IBM's CEO says nearly 8,000 jobs at the company could be replaced by AI
-  https://www.linkedin.com/news/story/ibm-ponders-ai-impact-before-hiring-6275930/
+- Content from cyber security news websites
+  https://www.bleepingcomputer.com/news/security/spinok-android-malware-found-in-more-apps-with-30-million-installs/?utm_source=dlvr.it&utm_medium=linkedin
+  https://www.bleepingcomputer.com/news/security/malicious-chrome-extensions-with-75m-installs-removed-from-web-store/
+
+  https://www.malwarebytes.com/blog/threat-intelligence/2023/06/the-2023-state-of-ransomware-in-education-84-increase-in-known-attacks-over-6-month-period?utm_source=dlvr.it&utm_medium=linkedin
+  https://therecord.media/canadian-uni-dealing-with-ransomware-attack
+
+  https://www.bleepingcomputer.com/news/security/top-5-password-cracking-techniques-used-by-hackers/
 - Optimized images
 - Provided server space on the Abertay student web server to host a website
 - Registered profile on the LinkedIn social network
 
-The website takes the user to the Home page with an image gallery where images and their descriptions are used as links to three technical articles. Each link goes to the separate page with an article content, a form with a built-in validation for adding comments, and a list of previous comments. The user can provide their name and leave a comment to the chosen article. Comments are stored in a database. There is a navigation menu with an internal link to the home page and a footer with an external link to the social network profile.
+The progressive enhancement technique is applied while building the website. More advanced features are added when the basic site is developed. The application takes the user to the Home page with an image gallery where images and their descriptions are used as links to the three cyber security articles. Each link goes to the separate page with an article content and illustrations. Proper HTML semantic and non-semantic tags are applied. CSS and Bootstrap framework are used to style and make pages responsive. The website opened on mobile device looks good, the user gets the same experience as on the desktop. Each Article page has a form with a built-in validation for adding comments, and a list of previous comments. The user can provide their name and leave a comment to the chosen article. Comments are stored in a database. There is a navigation menu with an internal link to the home page and a footer with an external link to the social network profile.
 
-The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/tech_news. 
-The user interface is supposed to be minimalist with three-four basic colours. The focus was made on the organization of the information.
+The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/blog. 
+The user interface provides the meaningful interaction functionality without empty spaces, oversized graphics or pointles use of communication between the website and the user.
+The nice appearance is achieved by considering the consumers expectations, using video and images, chosing the qualitative content, appliying attractive colors and appropriate typography. However, the whole user interface design is kept simple.
 
 ## design
 The web application architecture:
-Client: HTML, CSS
+Client: HTML, CSS, Bootstrap, JavaScript???
 
 There are four pages on the website. The sitemap is: 
 Home page                       First page                 Second page                Third page
  
 Website Title                   Article1                   Article2                   Article3 
-Statement about the news site   Form for the comment       Form for the comment       Form for the comment
+Statement about the site        Form for the comment       Form for the comment       Form for the comment
 Image galary with links         Previous comments list     Previous comments list     Previous comments list
 
 The Home page contains information about the website and links to the articles. The links are organized with <div> blocks. Each block contains an image and a description.
 The image acts as a link. To make the whole <div> block clickable the following technique is used: inside the link an empty <span> tag is set, the block is given position:relative, 
-the span is given position:absolute, width:100% and height:100%. 
-Each article page displays the content, collects data from user, validates, and sends it to the server to store in the database. The previous comments are retrieved from the database and listed below the form.
+the span is given position:absolute, width:100% and height:100%. Each article page displays the content, collects data from user, validates, and sends it to the server to store in the database. The previous comments are retrieved from the database and listed below the form.
+Bootstrap’s production-ready CSS and JavaScript is included via CDN, basic global display, typography, and link styles are set, more control is added with components......., form, ...
+The grid system with media queries are used to make the layout responsive. The official framework documentation is clear and comprehensive.
 
 Server: Apache HTTP server, PHP, MySQL
-Responds to the requests and sends an HTML document to the browser. Processes the user's data and stores it in the database.
+Responds to the requests and sends an HTML document to the browser. Processes the user's data, stores and loads it from the database. MySQL database system is used for the data persistence. It provides control and flexibility. The comments are stored in three tables, one for each article.
 
