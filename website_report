@@ -55,29 +55,26 @@ The inputs to the project are the following:
 - Provided server space on the Abertay student web server to host a website
 - Registered profile on the LinkedIn social network
 
-The website takes the user to the Home page with an image galary where images and their descriptions are used as links to three technical articles. 
-Each link goes to the separate page with the article content, a form for adding comments and a list of previous comments. 
-The user can provide their name and leave a comment to the chosen article. The form uses a built-in form validation.
-There is a navigation menu with an internal link to the home page and a footer with an external link to the social network profile.
+The website takes the user to the Home page with an image gallery where images and their descriptions are used as links to three technical articles. Each link goes to the separate page with an article content, a form with a built-in validation for adding comments, and a list of previous comments. The user can provide their name and leave a comment to the chosen article. Comments are stored in a database. There is a navigation menu with an internal link to the home page and a footer with an external link to the social network profile.
 
 The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/tech_news. 
-The user interface is supposed to be minimalist with three-four basic colours.
+The user interface is supposed to be minimalist with three-four basic colours. The focus was made on the organization of the information.
 
 ## design
 The web application architecture:
 Client: HTML, CSS
 
-There are three pages on the website. The sitemap is: 
+There are four pages on the website. The sitemap is: 
 Home page                       First page                 Second page                Third page
  
-Website Title                   Article                    Article                    Article 
+Website Title                   Article1                   Article2                   Article3 
 Statement about the news site   Form for the comment       Form for the comment       Form for the comment
 Image galary with links         Previous comments list     Previous comments list     Previous comments list
 
 The Home page contains information about the website and links to the articles. The links are organized with <div> blocks. Each block contains an image and a description.
 The image acts as a link. To make the whole <div> block clickable the following technique is used: inside the link an empty <span> tag is set, the block is given position:relative, 
 the span is given position:absolute, width:100% and height:100%. 
-Each article page displays the content, collects data from user, validates, and sends it to the server to store in the database. The previous commnets are listed below the form.
+Each article page displays the content, collects data from user, validates, and sends it to the server to store in the database. The previous comments are retrieved from the database and listed below the form.
 
 Server: Apache HTTP server, PHP, MySQL
 Responds to the requests and sends an HTML document to the browser. Processes the user's data and stores it in the database.
