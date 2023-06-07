@@ -25,7 +25,7 @@
             <body>
                 <header id="header">
                     <img src="images/icon-globe.png" id="logo" alt="logo">
-                    <h2>Tech News</h2>
+                    <h2>Cyber Security News</h2>
     _INIT;
 
     $day = date("l");
@@ -33,10 +33,10 @@
     $time = date("h:i:sa");
 
     echo <<<_HEADER
-                    <nav id="nav">
+                    <nav>
                         <a href="index.php" class="button">Home</a>
                     </nav>
-                    <div id="quote">It is $day , $time</div>
+                    <div id="quote">$day , $time</div>
                     <div id="images">
                         <img src="images/learning.png" alt="learning">
                         <img src="images/nature.png" alt="nature">

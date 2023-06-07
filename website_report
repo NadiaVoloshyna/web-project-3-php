@@ -24,12 +24,8 @@ The web application should have a professional look with the following character
 ## analysis
 The inputs to the project are the following:
 - Content from cyber security news websites
-  https://www.bleepingcomputer.com/news/security/spinok-android-malware-found-in-more-apps-with-30-million-installs/?utm_source=dlvr.it&utm_medium=linkedin
   https://www.bleepingcomputer.com/news/security/malicious-chrome-extensions-with-75m-installs-removed-from-web-store/
-
   https://www.malwarebytes.com/blog/threat-intelligence/2023/06/the-2023-state-of-ransomware-in-education-84-increase-in-known-attacks-over-6-month-period?utm_source=dlvr.it&utm_medium=linkedin
-  https://therecord.media/canadian-uni-dealing-with-ransomware-attack
-
   https://www.bleepingcomputer.com/news/security/top-5-password-cracking-techniques-used-by-hackers/
 - Optimized images
 - Provided server space on the Abertay student web server to host a website

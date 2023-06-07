@@ -15,77 +15,89 @@
     echo <<<_ARTICLE
         <section class="section">
             <article class="article">
+                <h3>Malicious Chrome extensions with 75M installs removed from Web Store</h3>
                 <p>
-                    <b>Quantum technology</b> is rapidly advancing, bringing us closer to solving previously unsolvable problems. And at IBM, 
-                    we're laser-focused on bringing useful quantum computing to the world. 
-                    Yesterday, at the G7 Summit, we took a big step forward towards this new era with the announcement of our 10-year, $100 million partnership 
-                    with the University of Tokyo and University of Chicago to develop a 100,000-qubit quantum system by the year 2033. Already, we've charted the path 
-                    to scale quantum processors to thousands of qubits but we recognize we cannot usher in this new era of supercomputing alone. As ever, we see 
-                    the potential and scale that comes from collaboration with like-minded, similarly ambitious institutions. Together, we will explore and advance 
-                    four key areas required to realize a system as this scale: quantum communication, middleware for quantum, quantum algorithms and error correction, 
-                    and components with the necessary supply chain. We do not underestimate the challenge before us, but we also see a clear path forward with 
-                    the collective effort and resources IBM and our partners will bring to bear.
+                    <b>Google</b> has removed from the Chrome Web Store 32 malicious extensions that could alter search results and push spam or unwanted ads. 
+                    Collectively, they come with a download count of 75 million. The extensions featured legitimate functionality to keep users unaware 
+                    of the malicious behavior that came in obfuscated code to deliver the payloads.
                 </p>
-                <hr>
-                <h3>Charting the course to 100,000 qubits</h3>
+                <div class="hr"></div>
                 <p>
-                    Our vision at IBM Quantum is to scale quantum processors to a size where they're capable of solving the world's most challenging problems.
-                    In order to get there, we've set our sights on a key milestone: a 100,000-qubit system by 2033. And now, we're sponsoring and partnering on targeted 
-                    research with the University of Tokyo and the University of Chicago to develop a system that would be capable of addressing some of the world's most 
-                    pressing problems that even the most advanced supercomputers of today may never be able to solve.</p>
-                <p>
-                    But why 100,000? At last year's IBM Quantum Summit, we demonstrated that we'd charted the paths forward to scaling quantum processors to thousands 
-                    of qubits — but beyond that, the path is less clear.
+                    Cybersecurity researcher Wladimir Palant analyzed the PDF Toolbox extension (2 million downloads) available from Chrome Web Store and found that 
+                    it included code that was disguised as a legitimate extension API wrapper.
                 </p>
                 <p>
-                    Why? It's a combination of footprint, cost, chip yield, energy, and supply chain challenges, to name a few. To ensure that these roadblocks don't 
-                    stop our progress, we must collaborate to do fundamental research across physics, engineering, and computer science.
+                    In a write-up in mid-May, the researcher explains that the code allowed the “serasearchtop[.]com” domain to inject arbitrary JavaScript code 
+                    into any website the user visited.
                 </p>
                 <p>
-                    Just as no single company is responsible for the current era of computing, now the world's greatest institutions are coming together to tackle this 
-                    problem to bring about this new era. We need the help of a broader quantum industry.
-                </p>
-                <h4>Scaling quantum computers</h4>
-                <p>
-                    Last year, we released our answer for how we plan to scale quantum computers to a level where they can perform useful tasks. With that foundation set, 
-                    we now see four key areas requiring further advancement in order to realize the 100,000-qubit supercomputer: Quantum communication, middleware for quantum, 
-                    quantum algorithms and error correction (capable of using multiple quantum processors and quantum communication), and components with the necessary supply chain.
-                <p>
-                <p>
-                    We'll be sponsoring research at the University of Chicago and the University of Tokyo to advance each of these four areas.
-                </p>
-                <img src="images/supercomputer.jpg" alt="supercomputer">
-                <p>
-                    The University of Tokyo will lead efforts to identify, scale, and run end-to-end demonstrations of quantum algorithms. They will also begin to develop and 
-                    build the supply chain around new components required for such a large system including cryogenics, control electronics, and more. The University of Tokyo, 
-                    too, has demonstrated leadership in these spaces; they helm the Quantum Innovation Initiative Consortium (QIIC), bringing together academia, government, and 
-                    industry to develop quantum computing technology and building an ecosystem around it.
+                    The potential for abuse ranges from inserting ads into webpages to stealing sensitive information. However, Palant didn't observe any malicious 
+                    activity, so the code's purpose remained unclear.
                 </p>
                 <p>
-                    Through the IBM-UTokyo Lab, the university has already begun researching and developing algorithms and applications related to quantum computing, while 
-                    laying the groundwork for the hardware and supply chain necessary to realize a computer at this scale.
+                    The researcher also noticed that the code was set to activate 24 hours after installing the extension, a behavior that is typically associated 
+                    with malicious intentions.
                 </p>
                 <p>
-                    Meanwhile, the University of Chicago will be leading efforts in bringing quantum communication to quantum computation, with classical and quantum parallelization 
-                    plus quantum networks. They will also lead efforts to improve middleware for quantum, adding serverless quantum execution, circuit knitting, and physics-informed 
-                    error resilience so we can run programs across these systems.
+                    A few days ago, Palant published a follow-up post on the case to alert that he had discovered the same suspicious code in another 18 Chrome 
+                    extensions with a total download count of 55 million. Some examples include:
+                <p>
+                <ul>
+                    <li>Autoskip for Youtube - 9 million active users</li>
+                    <li>Soundboost - 6.9 million active users</li>
+                    <li>Crystal Ad block - 6.8 million active users</li>
+                    <li>Brisk VPN - 5.6 million active users</li>
+                    <li>Clipboard Helper - 3.5 million active users</li>
+                    <li>Maxi Refresher - 3.5 million active users</li>
+                </ul>
+                <p>
+                    At the time of Palant publishing the second post, all of the extensions were still available in the Chrome Web Store.
+                </p>
+                <img src="images/autoskip.jpg" id="autoskip" alt="autoskip">
+                <p>
+                    Continuing his investigation, Palant found two variants of the code: one masquerading as Mozilla's WebExtension browser API Polyfill, and another 
+                    posing as the Day.js library.
                 </p>
                 <p>
-                    The University of Chicago has already demonstrated a proven track record of leadership in quantum and quantum communication through the Chicago Quantum Exchange. 
-                    The CQE operates a 124-mile quantum network over which to study long-range quantum communication. Additionally, many of the University of Chicago's software 
-                    techniques have helped provide structure to quantum software and influenced IBM's and other industry middleware.
+                    However, both versions featured the same arbitrary JS code injection mechanism involving serasearchtop[.]com.
                 </p>
                 <p>
-                    We recognize how challenging it will be to build a 100,000-qubit system. But we see the path before us — we have our list of known knowns and known unknowns. 
-                    And if unforeseen challenges arise, we as an industry should be eager to take them on. We think that together with the University of Chicago and the University of Tokyo, 
-                    100,000 connected qubits is an achievable goal by 2033.
+                    Although the researcher did not observe any clear malicious activity, he noted that there are numerous user reports and reviews on the Web Store 
+                    indicating that the extensions were performing redirections and search result hijacking.
                 </p>
                 <p>
-                    At IBM, we'll continue following our development roadmap to realize quantum-centric supercomputing, while enabling the community to pursue progressive performance 
-                    improvements. It means finding quantum advantages over classical processors, while treating quantum as one piece of a broader HPC paradigm with classical and quantum 
-                    working as one computational unit. And with this holistic approach, plus our push toward the 100,000-qubit mark, we're going to bring useful quantum computing to the world, 
-                    together.
-                </p>       
+                    Despite his attempts to report the suspicious extensions to Google, they continued to be available to users from the Chrom Web Store.
+                </p>
+                <p>
+                    Earlier today, though, cybersecurity company Avast said that it reported the extensions to Google after confirming their malicious nature, and 
+                    expanded the list to 32 entries. Collectively, these boasted 75 million installs.
+                </p>
+                <p>
+                    Avast says that while the extensions appear harmless to unsuspecting users, they are adware that hijacks search results to display sponsored links and paid 
+                    results, sometimes even serving malicious links.
+                </p> 
+                <p>
+                    Responding to a request for comment from BleepingComputer before Avast published its findings, a Google spokesperson said that the "reported 
+                    extensions have been removed from the Chrome Web Store."
+                </p>
+                <pre>
+                   “We take security and privacy claims against extensions seriously, and when we find extensions that violate our policies, we take appropriate action.”
+                   “The Chrome Web Store has policies in place to keep users safe that all developers must adhere to," the Google representative told BleepingComputer”
+                </pre>
+                <p>
+                    Avast highlights the significant impact of the extensions, which targeted tens of thousands of its customers, and potentially millions worldwide.
+                </p>
+                <p>
+                    For its customers, Avast selectively neutralized only the malicious elements within the extensions, letting the legitimate features continue operating without disruption.
+                </p>    
+                <p>
+                    While the 75 million downloads looks worrying, the company suspects that the count was "artificially inflated." A complete list of the malicious extensions 
+                    (IDs) can be found on Avast’s report.
+                </p>
+                <p>
+                    Users should note that the removal of the extensions from the Chrome Web Store does not automatically deactivate or uninstall them from their browsers, 
+                    so manual action is required to eliminate the risk.
+                </p>         
             </article>
     _ARTICLE;
 

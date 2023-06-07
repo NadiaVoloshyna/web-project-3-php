@@ -6,34 +6,33 @@
                 
     echo <<<_MAIN
         <section class="section">
-            <summary>
-                <p>
-                    <b>Tech News</b> is an independent online news journal launched in 2022 to cover key technical stories. Today we have readers from around the world.
-                    We bring you the future as it happens. <b>Tech News</b> is the ultimate resource for the latest tech news, views, information, data and events.
-                    Originally just focusing on emerging technology companies, we now cover developments in the tech industry across the globe.
+            <p>
+                <i><b>Cyber Security News</b></i> is an independent online news journal launched in 2022 to cover key technical stories. Today we have readers from around the world.
+                We bring you the future as it happens. <i><b>Cyber Security News</b></i> is the ultimate resource for the latest cyber security news, views, information, data and events.
+                We now cover developments in the tech industry across the globe. We believe that everyone has the right to cybersecurity, privacy and a thriving future.
+            </p>
+            <div class="hr"></div>
+            <p>
+                Whether you're an entrepreneur with a bright idea, a scaleup about to raise your Series D funding or a fully-fledged tech unicorn, we stand shoulder to shoulder
+                with startups and scaleups to provide the latest news, expert advice, inspiring stories and networking opportunities to help you grow and succeed. Our vision is 
+                for the <i><b>Cyber Security News</b></i> name to become synonymous with tech. We will continue to provide world-class content to become fully embedded in the scaleup journey. 
+                As part of our mission, we're increasing the amount of industry expert-led content we produce. Poor cyber security is increasingly affecting all levels of society, 
+                whether it is national, local, or personal. With a few strokes of a keyboard, nation states, terrorist groups, stateless organizations, and rogue individuals can 
+                launch a cyber-attack from anywhere, at any time, disrupting and damaging our democracy and way of life. <i><b>Cyber Security News</b></i> is a trusted partner to educate, 
+                inform and inspire the next generation of tech titans. Our goal is to empower industry experts to find viable solutions to urgent cybersecurity challenges. Together, we aim to widen our collective knowledge, and to develop our public trust.
                 </p>
-                <hr>
-                <p>
-                    Whether you're an entrepreneur with a bright idea, a scaleup about to raise your Series D funding or a fully-fledged tech unicorn, we stand shoulder to shoulder
-                    with startups and scaleups to provide the latest news, expert advice, inspiring stories and networking opportunities to help you grow and succeed. Our vision is 
-                    for the <b>Tech News</b> name to become synonymous with tech. We will continue to provide world-class content to become fully embedded in the scaleup journey. 
-                    As part of our mission, we're increasing the amount of industry expert-led content we produce. From tax to law and marketing to HR, <b>Tech News</b> is a trusted 
-                    partner to educate, inform and inspire the next generation of tech titans.
-                </p>
-            </summary>
-
+         
             <div id="gallery">
                 <div class="gallery">
                     <a target="_blank" href="article1.php">
                         <span id="span"></span>
-                        <img src="images/G7.png" alt="G7">
+                        <img src="images/malware.jpg" alt="malware">
                     </a>
                     <div class="desc">
-                        <h3>IBM unveiled a major long-term partnership at the G7 summit</h3>
-                        Quantum technology is rapidly advancing, bringing us closer to solving previously unsolvable problems. And at IBM, 
-                        we're laser-focused on bringing useful quantum computing to the world. </br>
-                        Yesterday, at the G7 Summit, we took a big step forward towards this new era with the announcement of our 10-year, 
-                        $100 million partnership with the University of Tokyo and University of Chicago to develop a 100,000-qubit quantum system by the year 2033.
+                        <h4>Malicious Chrome extensions with 75M installs removed from Web Store</h4>
+                        Google has removed from the Chrome Web Store 32 malicious extensions that could alter search results and push spam or unwanted ads. Collectively, 
+                        they come with a download count of 75 million. The extensions featured legitimate functionality to keep users unaware of the malicious behavior that 
+                        came in obfuscated code to deliver the payloads.
                         <span id="more">...read more</span>
                     </div>
                 </div>
@@ -41,29 +40,29 @@
                 <div class="gallery">
                     <a target="_blank" href="article2.php">
                         <span id="span"></span>
-                        <img src="images/watsonx.png" alt="watsonx">
+                        <img src="images/ransomware.png" alt="ransomware">
                     </a>
                     <div class="desc">
-                        <h3>IBM has officially entered the generative AI arena</h3>
-                        More than a decade after debuting Watson — a literal question-answering machine designed to beat humans at “Jeopardy” — 
-                        IBM is renewing its push into artificial intelligence. The company has brought back the brand in the form of Watsonx, 
-                        a platform that aims to help companies create and integrate custom AI capabilities into their operations. CEO Arvind Krishna says 
-                        the new data and AI platform could replace between 30% and 50% of “repetitive, back-office processes” in coming years and has repeatedly 
-                        emphasized its accuracy compared with rival AI products. <span id="more">...read more</span>
+                        <h4>The 2023 State of Ransomware in Education: 84% increase in attacks over 6-month period</h4>
+                        This article is based on research by Marcelo Rivero, Malwarebytes' ransomware specialist, who monitors information published by ransomware gangs 
+                        on their Dark Web sites. In this report, "known attacks" are those where the victim didn't pay a ransom. This provides the best overall picture of 
+                        ransomware activity, but the true number of attacks is far higher.
+                        <span id="more">...read more</span>
                     </div>
                 </div>
 
                 <div class="gallery">
                     <a target="_blank" href="article3.php">
                         <span id="span"></span>
-                        <img src="images/AI.png" alt="AI">
+                        <img src="images/passwords.jpg" alt="passwords">
                     </a>
                     <div class="desc">
-                        <h3>IBM's CEO says nearly 8,000 jobs at the company could be replaced by AI</h3>
-                        IBM will wait and see which jobs can be replaced by artificial intelligence before hiring for more back-office roles. 
-                        Roughly 7,800 jobs in departments such as human resources could be done with AI and automation, CEO Arvind Krishna says. 
-                        The century-old company, which has about 260,000 employees, continues to hire for customer-facing roles and software development. 
-                        Still, Krishna's announcement is one of the most sweeping by a major corporation on the impact of the new technology on its workforce, Bloomberg notes.
+                        <h4>Top 5 Password Cracking Techniques Used by Hackers</h4>
+                        One of the biggest security threats is password cracking. Are you an IT system administrator concerned about the security of your 
+                        organization's data? In this article, we'll provide an overview of password cracking, discuss the importance of strong passwords, and detail 
+                        the top 5 password cracking techniques hackers use. We'll also provide real-world examples of password-cracking attacks and their impact 
+                        and recommendations for enhancing password security. Whether you're a seasoned IT professional or just getting started, you need to understand 
+                        these password cracking techniques to help better secure your organization's data.
                         <span id="more">...read more</span>
                     </div>
                 </div>
