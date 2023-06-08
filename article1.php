@@ -13,15 +13,15 @@
     $action = "article1.php";
 
     echo <<<_ARTICLE
-        <section class="section">
+        <main class="main">
+            <h3>Malicious Chrome extensions with 75M installs removed from Web Store</h3>
+            <p>
+                <b>Google</b> has removed from the Chrome Web Store 32 malicious extensions that could alter search results and push spam or unwanted ads. 
+                Collectively, they come with a download count of 75 million. The extensions featured legitimate functionality to keep users unaware 
+                of the malicious behavior that came in obfuscated code to deliver the payloads.
+            </p>
+            <div class="hr"></div>
             <article class="article">
-                <h3>Malicious Chrome extensions with 75M installs removed from Web Store</h3>
-                <p>
-                    <b>Google</b> has removed from the Chrome Web Store 32 malicious extensions that could alter search results and push spam or unwanted ads. 
-                    Collectively, they come with a download count of 75 million. The extensions featured legitimate functionality to keep users unaware 
-                    of the malicious behavior that came in obfuscated code to deliver the payloads.
-                </p>
-                <div class="hr"></div>
                 <p>
                     Cybersecurity researcher Wladimir Palant analyzed the PDF Toolbox extension (2 million downloads) available from Chrome Web Store and found that 
                     it included code that was disguised as a legitimate extension API wrapper.
@@ -81,8 +81,10 @@
                     extensions have been removed from the Chrome Web Store."
                 </p>
                 <pre>
-                   “We take security and privacy claims against extensions seriously, and when we find extensions that violate our policies, we take appropriate action.”
-                   “The Chrome Web Store has policies in place to keep users safe that all developers must adhere to," the Google representative told BleepingComputer”
+                   “We take security and privacy claims against extensions seriously, 
+                   and when we find extensions that violate our policies, we take appropriate action.”
+                   “The Chrome Web Store has policies in place to keep users safe that all developers must adhere to," 
+                   the Google representative told BleepingComputer”
                 </pre>
                 <p>
                     Avast highlights the significant impact of the extensions, which targeted tens of thousands of its customers, and potentially millions worldwide.
@@ -92,7 +94,7 @@
                 </p>    
                 <p>
                     While the 75 million downloads looks worrying, the company suspects that the count was "artificially inflated." A complete list of the malicious extensions 
-                    (IDs) can be found on Avast’s report.
+                    (IDs) can be found on Avast's report.
                 </p>
                 <p>
                     Users should note that the removal of the extensions from the Chrome Web Store does not automatically deactivate or uninstall them from their browsers, 

@@ -12,13 +12,27 @@
     }
 
     echo <<<_FORM
-        <div id="form">
+        <div id="form" class="col-lg-4">
+
             <h4>JOIN THE CONVERSATION</h4>
             <form action=$action method="post" name="form">
                 <input type="text" id="input" name="name" placeholder="Enter your name" required><br/>
-                <textarea id="textarea" name="comment" rows="10" cols="80" placeholder="Leave your comment" required></textarea><br/>
+                <textarea id="textarea" name="comment" rows="10" cols="92" placeholder="Leave your comment" required></textarea><br/>
                 <button type="submit" id="button_post" class="button">post</button>
             </form>
+
+            <h4>JOIN THE CONVERSATION</h4>
+            <form action=$action method="post" name="form">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="FormControlInput" name="name" placeholder="Enter your name" aria-describedby="name" required>
+                    <div style="color: white" id="name" class="form-text">We'll never share your name with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="FormControlTextarea" rows="7" name="comment" placeholder="Leave your comment" required></textarea>
+                </div>
+                <button type="submit" id="button_post" class="button">post</button>
+            </form>
+
         </div>
     _FORM;
 
@@ -36,8 +50,8 @@
         echo <<<_COMMENTS
             <div id="block">
                 <img src="images/chat.png" alt="chat">
-                <div id="commenter">
-                    <p><b>$r0</b></p>
+                <div>
+                    <p id="commenter"><b>$r0</b></p>
                     <div>$r1</div>
                 </div>
             </div>
@@ -45,6 +59,6 @@
     }
 
     echo <<<_END
-        </section>
+        </main>
     _END;
 ?>

@@ -13,15 +13,15 @@
     $action = "article2.php";
 
     echo <<<_ARTICLE
-        <section class="section">
+        <main class="main">
+            <h3>The 2023 State of Ransomware in Education: 84% increase in attacks over 6-month period</h3>
+            <p>
+                This article is based on research by Marcelo Rivero, Malwarebytes' ransomware specialist, who monitors information published by ransomware gangs on 
+                their Dark Web sites. In this report, "known attacks" are those where the victim didn't pay a ransom. This provides the best overall picture of ransomware 
+                activity, but the true number of attacks is far higher. 
+            </p>
+            <div class="hr"></div>
             <article class="article">
-                <h3>The 2023 State of Ransomware in Education: 84% increase in attacks over 6-month period</h3>
-                <p>
-                    This article is based on research by Marcelo Rivero, Malwarebytes' ransomware specialist, who monitors information published by ransomware gangs on 
-                    their Dark Web sites. In this report, "known attacks" are those where the victim didn't pay a ransom. This provides the best overall picture of ransomware 
-                    activity, but the true number of attacks is far higher. 
-                </p>
-                <div class="hr"></div>
                 <p>
                     Ransomware gangs have made the past year a hard one for the education sector.
                 </p>

@@ -1,13 +1,2 @@
-// let onImageOver = () => {
-//     let quote= document.getElementById("quote");
-//     let logo = document.getElementById("logo");
-//     quote.style.opacity = "0.1"
-//     logo.style.cursor = "pointer"
-//     document.logo.src = "images/icon-earth.gif"
-// }
-
-// let onImageOut = () => {
-//     let quote= document.getElementById("quote");
-//     document.logo.src = "images/icon-globe.png"
-//     quote.style.opacity = "1"
-// }
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

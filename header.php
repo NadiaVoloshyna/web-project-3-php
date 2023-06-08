@@ -15,6 +15,7 @@
                     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" 
                     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+                <script type="text/javascript" src="test.js"></script>
                 <script>
                     if ( window.history.replaceState ) {
                         window.history.replaceState( null, null, window.location.href );
@@ -33,14 +34,36 @@
     $time = date("h:i:sa");
 
     echo <<<_HEADER
-                    <nav>
-                        <a href="index.php" class="button">Home</a>
-                    </nav>
                     <div id="quote">$day , $time</div>
-                    <div id="images">
-                        <img src="images/learning.png" alt="learning">
-                        <img src="images/nature.png" alt="nature">
-                        <img src="images/home.png" alt="home">
+                    <a href="index.php" data-bs-toggle="tooltip" title="Home"><img src="images/home.png" class="home" alt="home"></a>
+                    <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas"><img src="images/stack.png" class="home" alt="stack"></a>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasLabel">Recent Articles</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <a target="_blank" href="article1.php">
+                                <figure class="aside">
+                                    <img src="images/malware.jpg" class="menu" alt="malware">
+                                    <figcaption class="figcaption">Malicious Chrome extensions with 75M installs removed from Web Store</figcaption>
+                                </figure>
+                            </a>
+                            <hr class="line">
+                            <a target="_blank" href="article2.php">
+                                <figure class="aside">
+                                    <img src="images/ransomware.png" class="menu" alt="ransomware">
+                                    <figcaption class="figcaption">The 2023 State of Ransomware in Education: 84% increase in attacks over 6-month period</figcaption>
+                                </figure>
+                            </a>
+                            <hr class="line">
+                            <a target="_blank" href="article3.php">
+                                <figure class="aside">
+                                    <img src="images/passwords.jpg" class="menu" alt="passwords">
+                                    <figcaption class="figcaption">Top 5 Password Cracking Techniques Used by Hackers</figcaption>
+                                </figure>
+                            </a>
+                        </div>
                     </div>
                 </header> 
     _HEADER;
