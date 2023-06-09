@@ -13,14 +13,6 @@
 
     echo <<<_FORM
         <div id="form" class="col-lg-4">
-
-            <h4>JOIN THE CONVERSATION</h4>
-            <form action=$action method="post" name="form">
-                <input type="text" id="input" name="name" placeholder="Enter your name" required><br/>
-                <textarea id="textarea" name="comment" rows="10" cols="92" placeholder="Leave your comment" required></textarea><br/>
-                <button type="submit" id="button_post" class="button">post</button>
-            </form>
-
             <h4>JOIN THE CONVERSATION</h4>
             <form action=$action method="post" name="form">
                 <div class="mb-3">
@@ -32,7 +24,6 @@
                 </div>
                 <button type="submit" id="button_post" class="button">post</button>
             </form>
-
         </div>
     _FORM;
 

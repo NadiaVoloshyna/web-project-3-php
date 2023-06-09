@@ -25,7 +25,7 @@
 
             <body>
                 <header id="header">
-                    <img src="images/icon-globe.png" id="logo" alt="logo">
+                    <img src="images/bug.png" id="logo" alt="logo">
                     <h2>Cyber Security News</h2>
     _INIT;
 
