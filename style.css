@@ -42,8 +42,6 @@ body {
 
 /* header styles */
 #header {
-    display: flex;
-    align-items: center;
     background-color: #00688a;
     position: fixed;
     top: 0; 
@@ -51,10 +49,10 @@ body {
     width: 100%;
     height: 70px;
     z-index: 50;
+    padding: 5px;
 }
 
 #logo {
-    margin-right: 60px;
     margin-left: 10px;
     box-shadow: 4px 4px 8px 4px #dd4b39;
 }
@@ -64,13 +62,10 @@ body {
     font-weight: bold;
     font-style: italic;
     font-size: 25px;
-    margin-right: 400px;
     text-decoration: underline;
 }
 
 #quote {
-    margin-left: 520px;
-    margin-right: 180px;
     font-size: 15pt;
     font-weight: 600;
     font-family: Georgia;
@@ -85,11 +80,16 @@ body {
     cursor: pointer;
     display: block;
     padding: 2px;
-    margin-left: 20px;
 }
 
 .home:hover {
     opacity: 0.6;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #offcanvas {
@@ -124,27 +124,51 @@ body {
     border: 2px dotted black;
 }
 
-/* home page styles */
-.main {
-    margin: 100px 80px 150px;
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    
 }
 
-#section {
-    display: flex;
-    align-items: center;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .about, .desc {
+        font-size: 15px;
+        margin-left: 0 !important;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+      }
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+    .carousel {
+        margin-top: 50px;
+    }
+}
+
+/* home page styles */
+.main {
+    padding: 100px 80px;
 }
 
 #items {
     background-color: #00688a;
-    width: max-content;
     padding: 0 20px 20px;
     margin-top: 40px;
-    margin-right: 50px;
-}
-
-#carouselIndicators {
-    width: 600px;
-}
+} 
 
 .gallery {
     display: flex;

@@ -1,4 +1,8 @@
 <?php
+    $day = date("l");
+    date_default_timezone_set("Europe/London");
+    $time = date("h:i:sa");
+
     echo <<<_INIT
         <!DOCTYPE html> 
         <html lang="en">
@@ -24,47 +28,52 @@
             </head>
 
             <body>
-                <header id="header">
-                    <img src="images/bug.png" id="logo" alt="logo">
-                    <h2>Cyber Security News</h2>
+                <header>
+                    <div class="container-fluid" id="header">
+                        <div class="row align-items-end">
+                            <div class="col-sm-2 col-md-1">
+                                <img src="images/bug.png" id="logo" alt="logo">
+                            </div>
+                            <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                                <h2>Cyber Security News</h2>
+                            </div>
+                            <div class="d-sm-none d-xl-block col-xl-3 offset-xl-4">
+                                <div id="quote">$day , $time</div>
+                            </div>
+                            <div class="col-sm-2 col-xl-1 offset-sm-1 offset-md-4 offset-xl-0 nav">
+                                <a href="index.php" data-bs-toggle="tooltip" title="Home"><img src="images/home.png" class="home" alt="home"></a>
+                                <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas"><img src="images/stack.png" class="home" alt="stack"></a>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasLabel">Recent Articles</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <a target="_blank" href="article1.php">
+                                            <figure class="aside">
+                                                <img src="images/malware.jpg" class="menu" alt="malware">
+                                                <figcaption class="figcaption">Malicious Chrome extensions with 75M installs removed from Web Store</figcaption>
+                                            </figure>
+                                        </a>
+                                        <hr class="line">
+                                        <a target="_blank" href="article2.php">
+                                            <figure class="aside">
+                                                <img src="images/ransomware.png" class="menu" alt="ransomware">
+                                                <figcaption class="figcaption">The 2023 State of Ransomware in Education: 84% increase in attacks over 6-month period</figcaption>
+                                            </figure>
+                                        </a>
+                                        <hr class="line">
+                                        <a target="_blank" href="article3.php">
+                                            <figure class="aside">
+                                                <img src="images/passwords.jpg" class="menu" alt="passwords">
+                                                <figcaption class="figcaption">Top 5 Password Cracking Techniques Used by Hackers</figcaption>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                </div>
+                            <div>
+                        <div>
+                    </div> 
+                </header>
     _INIT;
-
-    $day = date("l");
-    date_default_timezone_set("Europe/London");
-    $time = date("h:i:sa");
-
-    echo <<<_HEADER
-                    <div id="quote">$day , $time</div>
-                    <a href="index.php" data-bs-toggle="tooltip" title="Home"><img src="images/home.png" class="home" alt="home"></a>
-                    <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas"><img src="images/stack.png" class="home" alt="stack"></a>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasLabel">Recent Articles</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <a target="_blank" href="article1.php">
-                                <figure class="aside">
-                                    <img src="images/malware.jpg" class="menu" alt="malware">
-                                    <figcaption class="figcaption">Malicious Chrome extensions with 75M installs removed from Web Store</figcaption>
-                                </figure>
-                            </a>
-                            <hr class="line">
-                            <a target="_blank" href="article2.php">
-                                <figure class="aside">
-                                    <img src="images/ransomware.png" class="menu" alt="ransomware">
-                                    <figcaption class="figcaption">The 2023 State of Ransomware in Education: 84% increase in attacks over 6-month period</figcaption>
-                                </figure>
-                            </a>
-                            <hr class="line">
-                            <a target="_blank" href="article3.php">
-                                <figure class="aside">
-                                    <img src="images/passwords.jpg" class="menu" alt="passwords">
-                                    <figcaption class="figcaption">Top 5 Password Cracking Techniques Used by Hackers</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                    </div>
-                </header> 
-    _HEADER;
 ?>

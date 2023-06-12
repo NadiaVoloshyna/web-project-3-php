@@ -1,5 +1,5 @@
 ## request
-Develop a Cyber Security News webpage using HTML, CSS, Bootstrap, JavaScript???, PHP and MySQL and put it onto the remote webserver. 
+Develop a Cyber Security News webpage using HTML, CSS, Bootstrap, JavaScript, PHP and MySQL and put it onto the remote webserver. 
 It should include three articles: Malware(100 words), Ransomware(100 words), approaches to Password Cracking(200 words). 
 The article content can be used from any source (provide a URL as a reference in the article). 
 Readers should be able to comment on the news article. Readers can also read comments from other users. 
@@ -39,7 +39,7 @@ The nice appearance is achieved by considering the consumers expectations, using
 
 ## design
 The web application architecture:
-Client: HTML, CSS, Bootstrap, JavaScript???
+Client: HTML, CSS, Bootstrap, JavaScript
 
 There are four pages on the website. The sitemap is: 
 Home page                       First page                 Second page                Third page
