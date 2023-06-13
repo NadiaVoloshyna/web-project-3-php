@@ -13,16 +13,21 @@
     $action = "article1.php";
 
     echo <<<_ARTICLE
-        <main class="main">
-            <h3>Malicious Chrome extensions with 75M installs removed from Web Store</h3>
-            <p>
-                <b>Google</b> has removed from the Chrome Web Store 32 malicious extensions that could alter search results and push spam or unwanted ads. 
-                Collectively, they come with a download count of 75 million. The extensions featured legitimate functionality to keep users unaware 
-                of the malicious behavior that came in obfuscated code to deliver the payloads.
-            </p>
-            <div class="hr"></div>
-            <section class="section">
-                <article class="article">
+        <div class="container-fluid main">
+            <div class="row">
+                <div class="col">
+                    <h3>Malicious Chrome extensions with 75M installs removed from Web Store</h3>
+                    <p>
+                        <b>Google</b> has removed from the Chrome Web Store 32 malicious extensions that could alter search results and push spam or unwanted ads. 
+                        Collectively, they come with a download count of 75 million. The extensions featured legitimate functionality to keep users unaware 
+                        of the malicious behavior that came in obfuscated code to deliver the payloads.
+                    </p>
+                    <div class="hr"></div>
+                </div>
+            </div>
+
+            <div class="row section">
+                <div class="col-xxl-7 col-xl-6 col-sm-12 article">
                     <p>
                         Cybersecurity researcher Wladimir Palant analyzed the PDF Toolbox extension (2 million downloads) available from Chrome Web Store and found that 
                         it included code that was disguised as a legitimate extension API wrapper. In a write-up in mid-May, the researcher explains that the code allowed 
@@ -67,12 +72,12 @@
                         Responding to a request for comment from BleepingComputer before Avast published its findings, a Google spokesperson said that the "reported 
                         extensions have been removed from the Chrome Web Store."
                     </p>
-                    <pre>
-                    “We take security and privacy claims against extensions seriously, 
-                    and when we find extensions that violate our policies, we take appropriate action.”
-                    “The Chrome Web Store has policies in place to keep users safe that all developers must adhere to," 
-                    the Google representative told BleepingComputer”
-                    </pre>
+                    <p><cite>
+                        “We take security and privacy claims against extensions seriously, 
+                        and when we find extensions that violate our policies, we take appropriate action.”
+                        “The Chrome Web Store has policies in place to keep users safe that all developers must adhere to," 
+                        the Google representative told BleepingComputer”
+                    </cite></p>
                     <p>
                         Avast highlights the significant impact of the extensions, which targeted tens of thousands of its customers, and potentially millions worldwide. 
                         For its customers, Avast selectively neutralized only the malicious elements within the extensions, letting the legitimate features continue operating 
@@ -83,13 +88,13 @@
                         (IDs) can be found on Avast's report. Users should note that the removal of the extensions from the Chrome Web Store does not automatically deactivate or 
                         uninstall them from their browsers, so manual action is required to eliminate the risk.
                     </p>     
-                </article>
+                </div>
     _ARTICLE;
 
     require_once 'sidebar.php';
 
     echo <<<_END
-            </section>
+            </div>
     _END;
 
     require_once 'comments.php';

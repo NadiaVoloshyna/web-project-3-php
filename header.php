@@ -31,16 +31,16 @@
                 <header>
                     <div class="container-fluid" id="header">
                         <div class="row align-items-end">
-                            <div class="col-sm-2 col-md-1">
+                            <div class="col-2 col-md-1">
                                 <img src="images/bug.png" id="logo" alt="logo">
                             </div>
-                            <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                            <div class="col-6 col-md-5 col-lg-4 col-xl-3">
                                 <h2>Cyber Security News</h2>
                             </div>
-                            <div class="d-sm-none d-xl-block col-xl-3 offset-xl-4">
+                            <div class="d-none d-xl-block col-xl-3 offset-xl-4">
                                 <div id="quote">$day , $time</div>
                             </div>
-                            <div class="col-sm-2 col-xl-1 offset-sm-1 offset-md-4 offset-xl-0 nav">
+                            <div class="col-3 col-sm-2 col-xl-1 offset-1 offset-md-4 offset-xl-0 nav">
                                 <a href="index.php" data-bs-toggle="tooltip" title="Home"><img src="images/home.png" class="home" alt="home"></a>
                                 <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas"><img src="images/stack.png" class="home" alt="stack"></a>
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">

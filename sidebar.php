@@ -1,6 +1,6 @@
 <?php
     echo <<<_SIDEBAR
-        <div id="ads">
+        <div class="col-xxl-4 col-xl-5 col-sm-9 offset-sm-1 ads">
             <div id="tips">
                 <img src="images/tips.png" id="tips1" alt="tips">
                 <h3 id="tips2">5 unusual cybersecurity tips that actually work</h3>

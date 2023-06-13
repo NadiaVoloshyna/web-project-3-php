@@ -124,41 +124,6 @@ body {
     border: 2px dotted black;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-    
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-    .about, .desc {
-        font-size: 15px;
-        margin-left: 0 !important;
-    }
-
-    .gallery {
-        flex-wrap: wrap;
-      }
-    
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (max-width: 1400px) {
-    .carousel {
-        margin-top: 50px;
-    }
-}
-
 /* home page styles */
 .main {
     padding: 100px 80px;
@@ -212,16 +177,13 @@ body {
 
 /* article styles */
 .section {
-    display: flex;
-    align-items: start;
     margin-top: 50px;
-    position: relative;
 }
 
 .article {
-    width: 60%;
     background-color: #00688a;
     padding: 20px;
+    height: fit-content;
 }
 
 ul {
@@ -238,23 +200,18 @@ ul {
     width: 600px;
 }
 
-#space {
-    width: 400px;
-}
-
 #table {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 #float {
-    display: flex;
-    align-items: center;
+    float: right;
 }
 
-#left {
-    width: 800px;
-    margin-right: 10px;
+#space {
+    width: 400px;
+    margin-left: 10px;
 }
 
 .figcaption {
@@ -274,14 +231,11 @@ ul {
     100% {opacity: 1;}
 }
 
-#ads {
+.ads {
     background-color: rgb(45, 83, 97);
-    width: 30%;
-    height: 100%;
-    position: absolute;
-    right: 0;
     overflow: auto;
     padding: 30px;
+    height: 1500px;
 }
 
 #tips {
@@ -314,8 +268,9 @@ ul {
 /* comments styles */
 #form {
     font-size: 14px;
-    margin-left: 30%;
-    margin-top: 50px;
+    margin-top: 70px;
+    position: relative;
+    margin-bottom: 60px;
 }
 
 #form h4 {
@@ -323,25 +278,22 @@ ul {
 }
 
 #button_post {
-    margin-left: 510px;
+    position: absolute;
+    bottom: -45px;
+    right: 0;
     color: #ffffff;
 }
 
 #title {
-    margin-left: 150px;
     color: #0097ca;
     font-size: 18px;
-    margin-left: 30%;
 }
 
 #block {
     font-size: 14px;
-    margin-left: 150px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    width: 590px;
-    margin-left: 30%;
 }
 
 #block img {
@@ -361,10 +313,8 @@ ul {
     bottom: 0; 
     height: 90px;
     overflow: hidden;
-    padding: 15px;
+    padding: 15px 15px 15px 65px;
     background: #00688a;
-    display: flex;
-    align-items: center;
     font-size: 17px;
     font-weight: bold;
 }
@@ -373,7 +323,123 @@ ul {
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
-    margin-right: 900px;
-    margin-left: 50px;
     font-family: Georgia;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    #header h2 {
+        font-size: 17px;
+    }
+
+    .home {
+        width: 35px;
+    } 
+    
+    .gallery img {
+        width: 200px;
+    }
+
+    .main {
+        padding: 100px 25px;
+    }
+
+    .about, .desc, .main p, .main ul, .ads p, #tips3 {
+        font-size: 14px !important;
+    }
+
+    #autoskip {
+        width: 200px !important;
+    }
+
+    #tips1 {
+        width: 90px !important;
+    }
+
+    #footer {
+        font-size: 14px;
+        height: 130px !important;
+    }
+
+    #footer br {
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    #autoskip {
+        width: 400px;
+    }
+
+    #tips1 {
+        width: 180px;
+    }
+
+    #tips2 {
+        font-size: 20px;
+    }
+
+    .graph {
+        width: 400px;
+    }
+
+    #space {
+        width: 300px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .about, .desc {
+        font-size: 15px;
+        margin-left: 0 !important;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+    } 
+    
+    .carousel-caption {
+        font-size: 14px;
+    }
+
+    .ads {
+        height: 500px !important;
+    }
+    
+    #footer {
+        height: 110px;
+        color: #002E3D;
+    }
+    
+    #footer a {
+        margin-bottom: 20px;
+        color:#ffffff;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .ads {
+        margin-top: 30px;
+        height: 800px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+    .carousel {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    #space {
+        width: 300px;
+    }
+    
+    .graph {
+        width: 400px;
+    }
 }

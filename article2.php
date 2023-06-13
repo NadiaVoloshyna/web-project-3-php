@@ -13,16 +13,20 @@
     $action = "article2.php";
 
     echo <<<_ARTICLE
-        <main class="main">
-            <h3>The 2023 State of Ransomware in Education: 84% increase in attacks over 6-month period</h3>
-            <p>
-                This article is based on research by Marcelo Rivero, Malwarebytes' ransomware specialist, who monitors information published by ransomware gangs on 
-                their Dark Web sites. In this report, "known attacks" are those where the victim didn't pay a ransom. This provides the best overall picture of ransomware 
-                activity, but the true number of attacks is far higher. 
-            </p>
-            <div class="hr"></div>
-            <section class="section">
-                <article class="article">
+        <div class="container-fluid main">
+            <div class="row">
+                <div class="col">
+                    <h3>The 2023 State of Ransomware in Education: 84% increase in attacks over 6-month period</h3>
+                    <p>
+                        This article is based on research by Marcelo Rivero, Malwarebytes' ransomware specialist, who monitors information published by ransomware gangs on 
+                        their Dark Web sites. In this report, "known attacks" are those where the victim didn't pay a ransom. This provides the best overall picture of ransomware 
+                        activity, but the true number of attacks is far higher. 
+                    </p>
+                    <div class="hr"></div>
+                </div>
+            </div>
+            <div class="row section">
+                <div class="col-xxl-7 col-xl-6 col-sm-12 article">
                     <p>
                         Ransomware gangs have made the past year a hard one for the education sector.
                     </p>
@@ -91,13 +95,13 @@
                             their tools, and their methods of entry, to avoid being attacked again.
                         </li>
                     </ul>
-                </article>
+                </div>
     _ARTICLE;
 
     require_once 'sidebar.php';
 
     echo <<<_END
-            </section>
+            </div>
     _END;
 
     require_once 'comments.php';

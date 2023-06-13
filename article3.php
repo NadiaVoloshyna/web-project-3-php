@@ -13,17 +13,21 @@
     $action = "article3.php";
 
     echo <<<_ARTICLE
-        <main class="main">
-            <h3>Top 5 Password Cracking Techniques Used by Hackers</h3>
-            <p>
-                One of the biggest security threats is password cracking. Are you an IT system administrator concerned about the security of your organization's data? 
-                In this article, we'll provide an overview of password cracking, discuss the importance of strong passwords, and detail the top 5 password cracking 
-                techniques hackers use. We'll also provide real-world examples of password-cracking attacks and their impact and recommendations for enhancing password security. 
-                Whether you're a seasoned IT professional or just getting started, you need to understand these password cracking techniques to help better secure your organization's data.
-            </p>
-            <div class="hr"></div>
-            <section class="section">
-                <article class="article">
+        <div class="container-fluid main">
+            <div class="row">
+                <div class="col">
+                    <h3>Top 5 Password Cracking Techniques Used by Hackers</h3>
+                    <p>
+                        One of the biggest security threats is password cracking. Are you an IT system administrator concerned about the security of your organization's data? 
+                        In this article, we'll provide an overview of password cracking, discuss the importance of strong passwords, and detail the top 5 password cracking 
+                        techniques hackers use. We'll also provide real-world examples of password-cracking attacks and their impact and recommendations for enhancing password security. 
+                        Whether you're a seasoned IT professional or just getting started, you need to understand these password cracking techniques to help better secure your organization's data.
+                    </p>
+                    <div class="hr"></div>
+                </div>
+            </div>
+            <div class="row section">
+                <div class="col-xxl-7 col-xl-6 col-sm-12 article">
                     <h4>What Goes Into Cracking a Password</h4>
                     <p>
                         Many users may have seen password cracking portrayed in movies as a quick and impressive feat. But, it is far less flashy and potentially much more 
@@ -61,34 +65,34 @@
                         <table class="table text-center">
                             <thead>
                                 <tr class="d-flex">
-                                    <th class="col-lg-2 col-md-4 col-sm-4">Characters</th>
+                                    <th class="col-xl-3 col-lg-2 col-md-4 col-sm-4">Characters</th>
                                     <th class="col-lg-3 col-md-4 col-sm-4">Lower & Uppercase Letters</th>
                                     <th class="col-lg-3 col-md-4 col-sm-4">Complex Passwords</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="d-flex">
-                                    <td class="col-lg-2 col-md-4 col-sm-4">8 Characters</td>
+                                    <td class="col-xl-3 col-lg-2 col-md-4 col-sm-4">8 Characters</td>
                                     <td class="col-lg-3 col-md-4 col-sm-4">22 minutes</td>
                                     <td class="col-lg-3 col-md-4 col-sm-4">8 hours</td>
                                 </tr>
                                 <tr class="d-flex">
-                                    <td class="col-lg-2 col-md-4 col-sm-4">9 Characters</td>
+                                    <td class="col-xl-3 col-lg-2 col-md-4 col-sm-4">9 Characters</td>
                                     <td class="col-lg-3 col-md-4 col-sm-4">19 hours</td>
                                     <td class="col-lg-3 col-md-4 col-sm-4">3 weeks</td>
                                 </tr>
                                 <tr class="d-flex">
-                                    <td class="col-lg-2 col-md-4 col-sm-4">10 Characters</td>
+                                    <td class="col-xl-3 col-lg-2 col-md-4 col-sm-4">10 Characters</td>
                                     <td class="col-lg-3 col-md-4 col-sm-4">1 month</td>
                                     <td class="col-lg-3 col-md-4 col-sm-4">5 years</td>
                                 </tr>
                                 <tr class="d-flex">
-                                    <td class="col-lg-2 col-md-4 col-sm-4">11 Characters</td>
+                                    <td class="col-xl-3 col-lg-2 col-md-4 col-sm-4">11 Characters</td>
                                     <td class="col-lg-3 col-md-4 col-sm-4">5 years</td>
                                     <td class="col-lg-3 col-md-4 col-sm-4">500 years</td>
                                 </tr>
                                 <tr class="d-flex">
-                                    <td class="col-lg-2 col-md-4 col-sm-4">12 Characters</td>
+                                    <td class="col-xl-3 col-lg-2 col-md-4 col-sm-4">12 Characters</td>
                                     <td class="col-lg-3 col-md-4 col-sm-4">300 years</td>
                                     <td class="col-lg-3 col-md-4 col-sm-4">34k years</td>
                                 </tr> 
@@ -106,8 +110,11 @@
                         of a hash (values known only to the server), then the resulting hashes won't match known values anymore.
                     </p>
                     <h5>Dictionary Attack</h5>
-                    <div id="float">
-                        <div id="left">
+                    <div>
+                        <figure id="float">
+                            <img src="images/space.jpg" id="space" alt="space">
+                            <figcaption class="figcaption">Top 5 Star Wars-themed passwords</figcaption>
+                        </figure>
                             <p>
                                 To make brute-forcing a password easier, attackers can use dictionaries of common words and phrases and company names, sports teams, etc. This narrows 
                                 down the list of potential password choices.
@@ -122,11 +129,6 @@
                                 A more advanced form of a dictionary attack is the Markov chain attack. This involves a statistical analysis of a list of words stored in a table and 
                                 used to calculate the probability of character placement in a brute-force attack.
                             </p>
-                        </div>
-                        <figure>
-                            <img src="images/space.jpg" id="space" alt="space">
-                            <figcaption class="figcaption">Top 5 Star Wars-themed passwords</figcaption>
-                        </figure>
                     </div>
                     <h5>Credential Stuffing</h5>
                     <p>
@@ -138,13 +140,13 @@
                         in all of the user's services being compromised.
                     </p>
 
-                </article>
+                </div>
     _ARTICLE;
 
     require_once 'sidebar.php';
 
     echo <<<_END
-            </section>
+            </div>
     _END;
 
     require_once 'comments.php';

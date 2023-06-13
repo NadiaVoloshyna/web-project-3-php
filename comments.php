@@ -12,26 +12,28 @@
     }
 
     echo <<<_FORM
-        <div id="form" class="col-lg-4">
-            <h4>JOIN THE CONVERSATION</h4>
-            <form action=$action method="post" name="form">
-                <div class="mb-3">
-                    <input type="text" class="form-control" id="FormControlInput" name="name" placeholder="Enter your name" aria-describedby="name" required>
-                    <div style="color: white" id="name" class="form-text">We'll never share your name with anyone else.</div>
+        <div class="row">
+            <div class="col-xxl-5 col-lg-6 col-sm-9 offset-xxl-3 offset-lg-3 offset-sm-1">
+                <div id="form"">
+                    <h4>JOIN THE CONVERSATION</h4>
+                    <form action=$action method="post" name="form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="FormControlInput" name="name" placeholder="Enter your name" aria-describedby="name" required>
+                            <div style="color: white" id="name" class="form-text">We'll never share your name with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="FormControlTextarea" rows="7" name="comment" placeholder="Leave your comment" required></textarea>
+                        </div>
+                        <button type="submit" id="button_post" class="button">post</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <textarea class="form-control" id="FormControlTextarea" rows="7" name="comment" placeholder="Leave your comment" required></textarea>
-                </div>
-                <button type="submit" id="button_post" class="button">post</button>
-            </form>
-        </div>
     _FORM;
 
     $query  = "SELECT * FROM $table";
     $result = $pdo->query($query);
 
     echo <<<_TITLE
-        <h4 id="title">ALL COMMENTS</h4>
+                <h4 id="title">ALL COMMENTS</h4>
     _TITLE;
 
     while ($row = $result->fetch()) {
@@ -39,17 +41,19 @@
         $r1 = htmlspecialchars($row['Comment']);
                     
         echo <<<_COMMENTS
-            <div id="block">
-                <img src="images/chat.png" alt="chat">
-                <div>
-                    <p id="commenter"><b>$r0</b></p>
-                    <div>$r1</div>
+                <div id="block">
+                    <img src="images/chat.png" alt="chat">
+                    <div>
+                        <p id="commenter"><b>$r0</b></p>
+                        <div>$r1</div>
+                    </div>
                 </div>
-            </div>
         _COMMENTS;
     }
 
     echo <<<_END
-        </main>
+           </div>
+        </div>
+    </div>
     _END;
 ?>
