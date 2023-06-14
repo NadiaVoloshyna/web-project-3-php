@@ -33,9 +33,9 @@ The inputs to the project are the following:
 
 The progressive enhancement technique is applied while building the website. More advanced features are added when the basic site is developed. The application takes the user to the Home page with an image gallery where images and their descriptions are used as links to the three cyber security articles. Each link goes to the separate page with an article content and illustrations. Proper HTML semantic and non-semantic tags are applied. CSS and Bootstrap framework are used to style and make pages responsive. The website opened on mobile device looks good, the user gets the same experience as on the desktop. Each Article page has a form with a built-in validation for adding comments, and a list of previous comments. The user can provide their name and leave a comment to the chosen article. Comments are stored in a database. There is a navigation menu with an internal link to the home page and a footer with an external link to the social network profile.
 
-The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/blog. 
-The user interface provides the meaningful interaction functionality without empty spaces, oversized graphics or pointles use of communication between the website and the user.
-The nice appearance is achieved by considering the consumers expectations, using images, chosing the qualitative content, appliying attractive colors and appropriate typography. However, the whole user interface design is kept simple.
+The web site is hosted on the Abertay Mayar server - https://mayar.abertay.ac.uk/~2208417/blog/index.php. 
+The user interface provides the meaningful interaction functionality without empty spaces, oversized graphics or pointless use of communication between the website and the user.
+The nice appearance is achieved by considering the consumers expectations, using images, choosing the qualitative content, applying attractive colours and appropriate typography. However, the whole user interface design is kept simple.
 
 ## design
 The web application architecture:
