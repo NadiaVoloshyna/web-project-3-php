@@ -15,7 +15,7 @@
     echo <<<_ARTICLE
         <div class="container-fluid main">
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <h3>The 2023 State of Ransomware in Education: 84% increase in attacks over 6-month period</h3>
                     <p>
                         This article is based on research by Marcelo Rivero, Malwarebytes' ransomware specialist, who monitors information published by ransomware gangs on 
@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="row section">
-                <div class="col-xxl-7 col-xl-6 col-sm-12 article">
+                <div class="col-xxl-7 col-xl-6 col-12 article">
                     <p>
                         Ransomware gangs have made the past year a hard one for the education sector.
                     </p>

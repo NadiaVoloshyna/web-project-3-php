@@ -6,9 +6,9 @@ Readers should be able to comment on the news article. Readers can also read com
 
 The web application should be dynamic with the following technical requirements: 
 • Clear use of HTML5 tags including text, images, and links
+• Use of a custom CSS to demonstrate any element
+• Use of CSS transition or CSS Animation or Canvas Animation  
 • Use of a CSS framework, such as Bootstrap, to provide a responsive layout 
-• Use of a custom CSS to demonstrate any element 
-• Use of CSS transition or CSS Animation or Canvas Animation 
 • Use of PHP server-side script(s) to enable: 
   - reading a table in a database – view old comments 
   - writing to a table in a database – post new comments
@@ -35,7 +35,7 @@ The progressive enhancement technique is applied while building the website. Mor
 
 The web site is hosted on the Abertay Mayar server - http://mayar.abertay.ac.uk/~2208417/blog. 
 The user interface provides the meaningful interaction functionality without empty spaces, oversized graphics or pointles use of communication between the website and the user.
-The nice appearance is achieved by considering the consumers expectations, using video and images, chosing the qualitative content, appliying attractive colors and appropriate typography. However, the whole user interface design is kept simple.
+The nice appearance is achieved by considering the consumers expectations, using images, chosing the qualitative content, appliying attractive colors and appropriate typography. However, the whole user interface design is kept simple.
 
 ## design
 The web application architecture:
@@ -51,8 +51,8 @@ Image galary with links         Previous comments list     Previous comments lis
 The Home page contains information about the website and links to the articles. The links are organized with <div> blocks. Each block contains an image and a description.
 The image acts as a link. To make the whole <div> block clickable the following technique is used: inside the link an empty <span> tag is set, the block is given position:relative, 
 the span is given position:absolute, width:100% and height:100%. Each article page displays the content, collects data from user, validates, and sends it to the server to store in the database. The previous comments are retrieved from the database and listed below the form.
-Bootstrap’s production-ready CSS and JavaScript is included via CDN, basic global display, typography, and link styles are set, more control is added with components......., form, ...
-The grid system with media queries are used to make the layout responsive. The official framework documentation is clear and comprehensive.
+Bootstrap’s production-ready CSS and JavaScript is included via CDN, basic global display, typography, and link styles are set, more control is added with Components (Tooltip, Offcanvas, 
+Carousel), Table and Form. Bootstrap grid system and CSS media queries are used to make the layout responsive. The official Bootstrap framework documentation is clear and comprehensive.
 
 Server: Apache HTTP server, PHP, MySQL
 Responds to the requests and sends an HTML document to the browser. Processes the user's data, stores and loads it from the database. MySQL database system is used for the data persistence. It provides control and flexibility. The comments are stored in three tables, one for each article.

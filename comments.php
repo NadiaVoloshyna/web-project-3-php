@@ -45,7 +45,7 @@
                     <img src="images/chat.png" alt="chat">
                     <div>
                         <p id="commenter"><b>$r0</b></p>
-                        <div>$r1</div>
+                        <div id="comment">$r1</div>
                     </div>
                 </div>
         _COMMENTS;

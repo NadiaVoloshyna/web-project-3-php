@@ -15,7 +15,7 @@
     echo <<<_ARTICLE
         <div class="container-fluid main">
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <h3>Top 5 Password Cracking Techniques Used by Hackers</h3>
                     <p>
                         One of the biggest security threats is password cracking. Are you an IT system administrator concerned about the security of your organization's data? 
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="row section">
-                <div class="col-xxl-7 col-xl-6 col-sm-12 article">
+                <div class="col-xxl-7 col-xl-6 col-12 article">
                     <h4>What Goes Into Cracking a Password</h4>
                     <p>
                         Many users may have seen password cracking portrayed in movies as a quick and impressive feat. But, it is far less flashy and potentially much more 
@@ -65,36 +65,36 @@
                         <table class="table text-center">
                             <thead>
                                 <tr class="d-flex">
-                                    <th class="col-xl-3 col-lg-2 col-md-4 col-sm-4">Characters</th>
-                                    <th class="col-lg-3 col-md-4 col-sm-4">Lower & Uppercase Letters</th>
-                                    <th class="col-lg-3 col-md-4 col-sm-4">Complex Passwords</th>
+                                    <th class="col-xl-3 col-lg-2 col-4">Characters</th>
+                                    <th class="col-lg-3 col-4">Lower & Uppercase Letters</th>
+                                    <th class="col-lg-3 col-4">Complex Passwords</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="d-flex">
-                                    <td class="col-xl-3 col-lg-2 col-md-4 col-sm-4">8 Characters</td>
-                                    <td class="col-lg-3 col-md-4 col-sm-4">22 minutes</td>
-                                    <td class="col-lg-3 col-md-4 col-sm-4">8 hours</td>
+                                    <td class="col-xl-3 col-lg-2 col-4">8 Characters</td>
+                                    <td class="col-lg-3 col-4">22 minutes</td>
+                                    <td class="col-lg-3 col-4">8 hours</td>
                                 </tr>
                                 <tr class="d-flex">
-                                    <td class="col-xl-3 col-lg-2 col-md-4 col-sm-4">9 Characters</td>
-                                    <td class="col-lg-3 col-md-4 col-sm-4">19 hours</td>
-                                    <td class="col-lg-3 col-md-4 col-sm-4">3 weeks</td>
+                                    <td class="col-xl-3 col-lg-2 col-4">9 Characters</td>
+                                    <td class="col-lg-3 col-4">19 hours</td>
+                                    <td class="col-lg-3 col-4">3 weeks</td>
                                 </tr>
                                 <tr class="d-flex">
-                                    <td class="col-xl-3 col-lg-2 col-md-4 col-sm-4">10 Characters</td>
-                                    <td class="col-lg-3 col-md-4 col-sm-4">1 month</td>
-                                    <td class="col-lg-3 col-md-4 col-sm-4">5 years</td>
+                                    <td class="col-xl-3 col-lg-2 col-4">10 Characters</td>
+                                    <td class="col-lg-3 col-4">1 month</td>
+                                    <td class="col-lg-3 col-4">5 years</td>
                                 </tr>
                                 <tr class="d-flex">
-                                    <td class="col-xl-3 col-lg-2 col-md-4 col-sm-4">11 Characters</td>
-                                    <td class="col-lg-3 col-md-4 col-sm-4">5 years</td>
-                                    <td class="col-lg-3 col-md-4 col-sm-4">500 years</td>
+                                    <td class="col-xl-3 col-lg-2 col-4">11 Characters</td>
+                                    <td class="col-lg-3 col-4">5 years</td>
+                                    <td class="col-lg-3 col-4">500 years</td>
                                 </tr>
                                 <tr class="d-flex">
-                                    <td class="col-xl-3 col-lg-2 col-md-4 col-sm-4">12 Characters</td>
-                                    <td class="col-lg-3 col-md-4 col-sm-4">300 years</td>
-                                    <td class="col-lg-3 col-md-4 col-sm-4">34k years</td>
+                                    <td class="col-xl-3 col-lg-2 col-4">12 Characters</td>
+                                    <td class="col-lg-3 col-4">300 years</td>
+                                    <td class="col-lg-3 col-4">34k years</td>
                                 </tr> 
                             </tbody>
                         </table>

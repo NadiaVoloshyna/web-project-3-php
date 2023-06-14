@@ -1,14 +1,3 @@
-.test {
-    color: rgb(45, 83, 97)  
-    #0077b5
-    #3b5998
-    #002E3D 
-    #dd4b39
-    #6b1c12  
-    #39f
-    #006789
-}
-
 html {
     position: relative;
     min-height: 100%;
@@ -293,7 +282,7 @@ ul {
     font-size: 14px;
     margin-bottom: 20px;
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
 #block img {
@@ -303,6 +292,10 @@ ul {
 
 #commenter {
     color: #0097ca;
+}
+
+#comment {
+    word-break: break-all;
 }
 
 /* footer styles */
@@ -326,7 +319,7 @@ ul {
     font-family: Georgia;
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     #header h2 {
         font-size: 17px;
@@ -335,16 +328,16 @@ ul {
     .home {
         width: 35px;
     } 
-    
-    .gallery img {
-        width: 200px;
-    }
 
     .main {
         padding: 100px 25px;
     }
 
-    .about, .desc, .main p, .main ul, .ads p, #tips3 {
+    .gallery img {
+        width: 200px;
+    }
+
+    .about, .desc, .main p, .main ul, .article ul, .ads p, #tips3 {
         font-size: 14px !important;
     }
 
@@ -355,19 +348,31 @@ ul {
     #tips1 {
         width: 90px !important;
     }
+    
+    .graph {
+        width: 250px !important;
+    }
+
+    #table {
+        font-size: 13px;
+    }
 
     #footer {
         font-size: 14px;
         height: 130px !important;
     }
 
-    #footer br {
+    #footer br, #float {
         display: none;
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+   .ads {
+        height: 500px !important;
+    }
+   
     #autoskip {
         width: 400px;
     }
@@ -389,7 +394,7 @@ ul {
     }
 }
 
-/* Large devices (desktops, 992px and up) */
+/* large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
     .about, .desc {
         font-size: 15px;
@@ -403,10 +408,6 @@ ul {
     .carousel-caption {
         font-size: 14px;
     }
-
-    .ads {
-        height: 500px !important;
-    }
     
     #footer {
         height: 110px;
@@ -419,7 +420,7 @@ ul {
     }
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
+/* x-large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
     .ads {
         margin-top: 30px;
@@ -427,7 +428,7 @@ ul {
     }
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
+/* xx-large devices (larger desktops, 1400px and up) */
 @media (max-width: 1400px) {
     .carousel {
         margin-top: 50px;

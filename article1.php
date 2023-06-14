@@ -15,7 +15,7 @@
     echo <<<_ARTICLE
         <div class="container-fluid main">
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <h3>Malicious Chrome extensions with 75M installs removed from Web Store</h3>
                     <p>
                         <b>Google</b> has removed from the Chrome Web Store 32 malicious extensions that could alter search results and push spam or unwanted ads. 
@@ -27,7 +27,7 @@
             </div>
 
             <div class="row section">
-                <div class="col-xxl-7 col-xl-6 col-sm-12 article">
+                <div class="col-xxl-7 col-xl-6 col-12 article">
                     <p>
                         Cybersecurity researcher Wladimir Palant analyzed the PDF Toolbox extension (2 million downloads) available from Chrome Web Store and found that 
                         it included code that was disguised as a legitimate extension API wrapper. In a write-up in mid-May, the researcher explains that the code allowed 
